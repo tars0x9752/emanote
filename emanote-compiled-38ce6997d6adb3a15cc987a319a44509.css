@@ -660,10 +660,6 @@ ul {
   --tw-text-opacity: 1;
   color: rgba(75, 85, 99, var(--tw-text-opacity));
 }
-.text-light-600 {
-  --tw-text-opacity: 1;
-  color: rgba(241, 243, 245, var(--tw-text-opacity));
-}
 .hover\:text-green-700:hover {
   --tw-text-opacity: 1;
   color: rgba(4, 120, 87, var(--tw-text-opacity));
