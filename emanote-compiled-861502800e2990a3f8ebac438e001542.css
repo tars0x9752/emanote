@@ -276,6 +276,14 @@ ul {
   --tw-border-opacity: 1;
   border-color: rgba(253, 230, 138, var(--tw-border-opacity));
 }
+.hover\:border-blue-400:hover {
+  --tw-border-opacity: 1;
+  border-color: rgba(96, 165, 250, var(--tw-border-opacity));
+}
+.border-blue-200 {
+  --tw-border-opacity: 1;
+  border-color: rgba(191, 219, 254, var(--tw-border-opacity));
+}
 .checked\:border-transparent:checked {
   border-color: transparent;
 }
@@ -292,11 +300,11 @@ ul {
 .border-2 {
   border-width: 2px;
 }
-.border-t-8 {
-  border-top-width: 8px;
-}
 .border-b-2 {
   border-bottom-width: 2px;
+}
+.border-t-8 {
+  border-top-width: 8px;
 }
 .border-l-2 {
   border-left-width: 2px;
@@ -434,13 +442,13 @@ ul {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -612,6 +620,12 @@ ul {
   -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.hover\:shadow:hover {
+  --tw-shadow-color: 0, 0, 0;
+  --tw-shadow: 0 1px 3px 0 rgba(var(--tw-shadow-color), 0.1), 0 1px 2px 0 rgba(var(--tw-shadow-color), 0.06);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 .shadow-inner {
   --tw-shadow-color: 0, 0, 0;
   --tw-shadow: inset 0 2px 4px 0 rgba(var(--tw-shadow-color), 0.06);
@@ -660,6 +674,10 @@ ul {
   --tw-text-opacity: 1;
   color: rgba(75, 85, 99, var(--tw-text-opacity));
 }
+.hover\:text-blue-500:hover {
+  --tw-text-opacity: 1;
+  color: rgba(59, 130, 246, var(--tw-text-opacity));
+}
 .hover\:text-green-700:hover {
   --tw-text-opacity: 1;
   color: rgba(4, 120, 87, var(--tw-text-opacity));
@@ -672,9 +690,9 @@ ul {
   --tw-text-opacity: 1;
   color: rgba(4, 120, 87, var(--tw-text-opacity));
 }
-.hover\:text-blue-500:hover {
+.hover\:text-green-500:hover {
   --tw-text-opacity: 1;
-  color: rgba(59, 130, 246, var(--tw-text-opacity));
+  color: rgba(16, 185, 129, var(--tw-text-opacity));
 }
 .truncate {
   overflow: hidden;
