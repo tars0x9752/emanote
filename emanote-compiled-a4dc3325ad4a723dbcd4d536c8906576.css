@@ -531,9 +531,6 @@ ul {
 .hover\:opacity-80:hover {
   opacity: 0.8;
 }
-.opacity-95 {
-  opacity: 0.95;
-}
 .overflow-auto {
   overflow: auto;
 }
