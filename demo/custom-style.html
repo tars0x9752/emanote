@@ -18,7 +18,7 @@
     <!-- Add anything that should go in <head> of these routes here -->
   
   <!-- CSSSTART -->
-	<link rel="stylesheet" href="emanote-compiled-3ad9f8eeecb4086389a4d29333ecfb67.css" />
+	<link rel="stylesheet" href="emanote-compiled-878ed4fe53ec461036513195062e767c.css" />
   <!-- CSSEND -->
   <head-extra></head-extra>
 </head>
@@ -524,9 +524,16 @@
     </p>
   </div><h2 id='advanced-styling' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Advanced styling</h2>
     <p class='mb-3'>
-      Using <a href='https://github.com/jgm/commonmark-hs/blob/master/commonmark-extensions/test/fenced_divs.md' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>fenced_divs extension</a>, you can wrap parts of your Markdown using a <a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>div</a>, and then style it en masse. For example, to <a href='demo/embed' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>embed multiple notes</a> in a “matrix” arrangement you can make use of CSS grids as provided by Tailwind’s classes.
+      Using <a href='https://github.com/jgm/commonmark-hs/blob/master/commonmark-extensions/test/fenced_divs.md' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>fenced_divs</a> with <a href='https://github.com/jgm/commonmark-hs/blob/master/commonmark-extensions/test/attributes.md' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>attributes</a> extension, you can wrap parts of your Markdown using a <a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>div</a>, and then style it en masse. For example, to <a href='demo/embed' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>embed multiple notes</a> in a “matrix” arrangement
+    <!-- DoNotFormat -->
+    <!-- We use JavaScript because anchor links won't work if there is a <base> tag;
+         see https://stackoverflow.com/a/34765348 
+    -->
+    <sup class='px-0.5'><a class='text-blue-600 hover:underline' href='javascript:;' onclick="document.location.hash='#fn1';">1</a></sup>
+    <!-- DoNotFormat -->
+   you can make use of CSS grids as provided by Tailwind’s classes.
     </p>
-  <div class='grid grid-cols-2 grid-flow-row gap-0 p-3 bg-gray-500'><section title='Embedded note' class='p-4 mx-2 mb-2 bg-white border-2 rounded-lg shadow-inner'>
+  <div class='grid grid-cols-1 lg:grid-cols-2 grid-flow-row gap-0 p-3 bg-gray-500'><section title='Embedded note' class='p-4 mx-2 mb-2 bg-white border-2 rounded-lg shadow-inner'>
   <header class='flex items-center justify-center text-2xl italic bg-blue-50 rounded py-1 px-2 mb-3'>
     <a href='examples'>
       Examples
@@ -618,6 +625,20 @@
   
   </div>
 </section></div>
+    <div title='Footnotes' class='pt-2 mt-8 space-y-1 text-gray-500 transform scale-x-90 border-t-2'>
+      <header class='font-semibold'>Footnotes</header>
+      
+        <div id='fn1'>
+          <header class='italic'>
+            1.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            If you are viewing this page on mobile or smaller screens, the embedded notes will be stacked on top of one another because we use Tailwind’s <a href='https://tailwindcss.com/docs/responsive-design' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>responsive classes</a>. Incidentally, we use the <code class='py-0.5 bg-gray-100 text-sm'>{class=".."}</code> syntax, rather than the <code class='py-0.5 bg-gray-100 text-sm'>{.someClass}</code> syntax, only because the former is <a href='https://github.com/jgm/commonmark-hs/issues/76' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>more lenient</a> in accept non-standard class names, such as the Tailwind responsive classes (ie. <code class='py-0.5 bg-gray-100 text-sm'>lg:grid-cols-2</code>).
+          </div>
+        </div>
+      
+    </div>
+  
 </article>
             
             
