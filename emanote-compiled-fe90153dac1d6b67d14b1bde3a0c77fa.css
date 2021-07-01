@@ -83,19 +83,15 @@ h1 {
 h1, p {
   margin: 0;
 }
-h1, p, h2, dl, dd, pre {
-  margin: 0;
-}
-h1, h2 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-h1, p, h2, h3 {
+h1, p, h2, dl, dd, h3, pre {
   margin: 0;
 }
 h1, h2, h3 {
   font-size: inherit;
   font-weight: inherit;
+}
+h1, p, h2, h3 {
+  margin: 0;
 }
 img {
   border-style: solid;
@@ -252,6 +248,10 @@ ul {
   --tw-bg-opacity: 1;
   background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
 }
+.bg-yellow-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
+}
 .bg-green-100 {
   --tw-bg-opacity: 1;
   background-color: rgba(209, 250, 229, var(--tw-bg-opacity));
@@ -300,6 +300,9 @@ ul {
 }
 .rounded-lg {
   border-radius: 0.5rem;
+}
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 .border-2 {
   border-width: 2px;
