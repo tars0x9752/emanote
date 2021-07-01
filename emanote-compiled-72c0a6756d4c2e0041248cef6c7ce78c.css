@@ -812,9 +812,6 @@ ul {
   .md\:mb-8 {
     margin-bottom: 2rem;
   }
-  .md\:max-w-xs {
-    max-width: 20rem;
-  }
   .md\:sticky {
     position: sticky;
     position: -webkit-sticky;
@@ -828,6 +825,9 @@ ul {
     -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
+  .md\:w-64 {
+    width: 16rem;
+  }
 }
 @media (min-width: 1024px) {
   .lg\:max-w-screen-md {
@@ -835,5 +835,13 @@ ul {
   }
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1280px) {
+  .xl\:max-w-sm {
+    max-width: 24rem;
+  }
+  .xl\:w-auto {
+    width: auto;
   }
 }
