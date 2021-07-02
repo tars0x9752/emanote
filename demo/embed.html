@@ -19,7 +19,7 @@
 
   
   <!-- CSSSTART -->
-	<link rel="stylesheet" href="emanote-compiled-fe90153dac1d6b67d14b1bde3a0c77fa.css" />
+	<link rel="stylesheet" href="emanote-compiled-a84ec183f5c4c25e3efefc976a409536.css" />
   <!-- CSSEND -->
 
   <!-- Heist error element -->
@@ -480,6 +480,84 @@
 
 
   
+  
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-500' viewBox='0 0 20 20' fill='currentColor'>
+        <path d='M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z'></path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Apps' href='apps'>
+      Apps
+    </a>
+    
+      
+        <span class='text-gray-300' title='1 children inside'>
+          1
+        </span>
+      
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+            
+              <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+  
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-500' viewBox='0 0 20 20' fill='currentColor'>
+        <path d='M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z'></path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Tips' href='tips'>
+      Tips
+    </a>
+    
+      
+        <span class='text-gray-300' title='1 children inside'>
+          1
+        </span>
+      
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+            
+              <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
 
 
 <!-- Rendering of this tree -->
@@ -531,7 +609,7 @@
 </div>
   
     <p class='mb-3'>
-      You can embed files, using <code class='py-0.5 bg-gray-100 text-sm'>![[..]]</code> - a syntax inspired by <a href='https://help.obsidian.md/How+to/Embed+files' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Obsidian</a>. The HTML can be fully customized for each embed types.
+      You can embed files, using <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>![[..]]</code> - a syntax inspired by <a href='https://help.obsidian.md/How+to/Embed+files' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Obsidian</a>. The HTML can be fully customized for each embed types.
     </p>
   
     <p class='mb-3'>
@@ -546,7 +624,7 @@
     </p>
   <h2 id='notes' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Notes</h2>
     <p class='mb-3'>
-      Embedding a note will simply inline it. For example, using <code class='py-0.5 bg-gray-100 text-sm'>![[start]]</code> displays the following:
+      Embedding a note will simply inline it. For example, using <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>![[start]]</code> displays the following:
     </p>
   <section title='Embedded note' class='p-4 mx-2 mb-2 bg-white border-2 rounded-lg shadow-inner'>
   <header class='flex items-center justify-center text-2xl italic bg-blue-50 rounded py-1 px-2 mb-3'>
@@ -557,21 +635,33 @@
   <div>
     
     <p class='mb-3'>
-      Nothing to see here yet. Meanwhile,
+      WIP, but for now:
     </p>
   
     <ul class='my-3 ml-4 space-y-1 list-disc list-inside'>
       
         <li>
-          follow the <a href='https://github.com/srid/emanote#emanote' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>README on GitHub</a> to install Emanote
+          Follow the <a href='https://github.com/srid/emanote#emanote' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>README on GitHub</a> to install Emanote
         </li>
       
         <li>
-          Run <code class='py-0.5 bg-gray-100 text-sm'>PORT=8080 emanote</code> in your folder of markdown files
+          Use your existing notebook, or create one from <a href='https://github.com/srid/emanote-template' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>emanote-template</a>
     <ul class='my-3 ml-4 space-y-1 list-disc list-inside'>
       
         <li>
-          Or <code class='py-0.5 bg-gray-100 text-sm'>mkdir /tmp/output; emanote gen /tmp/output</code> to generate static files
+          If using emanote-template, open the notebook in <a href='apps/vscode' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>Visual Studio Code</a> and install the recommended extensions.
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          Run <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>PORT=8080 emanote</code> on that notebook
+    <ul class='my-3 ml-4 space-y-1 list-disc list-inside'>
+      
+        <li>
+          Or <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>mkdir /tmp/output; emanote gen /tmp/output</code> to generate static files
         </li>
       
     </ul>
@@ -591,11 +681,11 @@
     </p>
   <h3 id='images' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Images</h3>
     <p class='mb-3'>
-      Embedding image files as, say, <code class='py-0.5 bg-gray-100 text-sm'>![[disaster-girl.jpg]]</code> is equivalent to <code class='py-0.5 bg-gray-100 text-sm'>![](path/to/disaster-girl.jpg))</code>.
+      Embedding image files as, say, <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>![[disaster-girl.jpg]]</code> is equivalent to <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>![](path/to/disaster-girl.jpg))</code>. See also the tip: <a href='tips/adding-images' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>Adding Images</a>.
     </p>
   <img class='mb-3' src='demo/disaster-girl.jpg' alt='[[disaster-girl.jpg]]' /><h3 id='videos' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Videos</h3>
     <p class='mb-3'>
-      The following is the result of using <code class='py-0.5 bg-gray-100 text-sm'>![[death-note.mp4]]</code>.
+      The following is the result of using <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>![[death-note.mp4]]</code>.
     </p>
   <video class='mb-3' autoplay loop muted>
   <source src='demo/death-note.mp4' />
@@ -634,6 +724,18 @@
           </div>
         </li>
       
+        <li>
+          <a class='text-blue-600 font-bold hover:bg-blue-50' href='tips/adding-images'>
+            Adding Images
+          </a>
+          <div class='mb-4 overflow-auto text-sm text-gray-500'>
+            <!-- TODO: How to style the backlinks list item element? Or render each separately?
+              Also, group contexts from same source.
+            -->
+            <div><p>Note that the extension uses the traditional <code>![]()</code> syntax to link to the image, but you may switch to using the <a href='demo/embed' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>wiki-link embedding syntax</a> (<code>![[]]</code>) as it has the advantage of not needing to specify the full path to the image (thus allowing you to the move the image around under the notebook without breaking referring links).</p></div>
+          </div>
+        </li>
+      
     </ul>
   </div>
 
@@ -657,7 +759,7 @@
       
         
           <span class='font-mono text-sm tracking-tighter' title='And rendered with /templates/layouts/book'>
-            0.1.31.3
+            0.1.31.4
           </span>
         
       

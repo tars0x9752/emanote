@@ -19,7 +19,7 @@
 
   
   <!-- CSSSTART -->
-	<link rel="stylesheet" href="emanote-compiled-fe90153dac1d6b67d14b1bde3a0c77fa.css" />
+	<link rel="stylesheet" href="emanote-compiled-a84ec183f5c4c25e3efefc976a409536.css" />
   <!-- CSSEND -->
 
   <!-- Heist error element -->
@@ -286,6 +286,84 @@
 
 
   
+  
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-500' viewBox='0 0 20 20' fill='currentColor'>
+        <path d='M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z'></path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Apps' href='apps'>
+      Apps
+    </a>
+    
+      
+        <span class='text-gray-300' title='1 children inside'>
+          1
+        </span>
+      
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+            
+              <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+  
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-500' viewBox='0 0 20 20' fill='currentColor'>
+        <path d='M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z'></path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Tips' href='tips'>
+      Tips
+    </a>
+    
+      
+        <span class='text-gray-300' title='1 children inside'>
+          1
+        </span>
+      
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+            
+              <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
 
 
 <!-- Rendering of this tree -->
@@ -337,21 +415,33 @@
 </div>
   
     <p class='mb-3'>
-      Nothing to see here yet. Meanwhile,
+      WIP, but for now:
     </p>
   
     <ul class='my-3 ml-4 space-y-1 list-disc list-inside'>
       
         <li>
-          follow the <a href='https://github.com/srid/emanote#emanote' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>README on GitHub</a> to install Emanote
+          Follow the <a href='https://github.com/srid/emanote#emanote' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>README on GitHub</a> to install Emanote
         </li>
       
         <li>
-          Run <code class='py-0.5 bg-gray-100 text-sm'>PORT=8080 emanote</code> in your folder of markdown files
+          Use your existing notebook, or create one from <a href='https://github.com/srid/emanote-template' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>emanote-template</a>
     <ul class='my-3 ml-4 space-y-1 list-disc list-inside'>
       
         <li>
-          Or <code class='py-0.5 bg-gray-100 text-sm'>mkdir /tmp/output; emanote gen /tmp/output</code> to generate static files
+          If using emanote-template, open the notebook in <a href='apps/vscode' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>Visual Studio Code</a> and install the recommended extensions.
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          Run <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>PORT=8080 emanote</code> on that notebook
+    <ul class='my-3 ml-4 space-y-1 list-disc list-inside'>
+      
+        <li>
+          Or <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>mkdir /tmp/output; emanote gen /tmp/output</code> to generate static files
         </li>
       
     </ul>
@@ -365,6 +455,18 @@
   <div class='p-4 mt-8 bg-gray-100 rounded'>
     <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
     <ul class='space-y-1'>
+      
+        <li>
+          <a class='text-blue-600 font-bold hover:bg-blue-50' href='apps/vscode'>
+            Visual Studio Code
+          </a>
+          <div class='mb-4 overflow-auto text-sm text-gray-500'>
+            <!-- TODO: How to style the backlinks list item element? Or render each separately?
+              Also, group contexts from same source.
+            -->
+            <div><p><a href='https://code.visualstudio.com/' class='text-gray-600 hover:underline' target='_blank' rel='noopener'>Visual Studio Code</a> is an open source editor that you can use to edit your plain-text notes. See <a href='start' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Getting Started</a> for a template notebook that works with it.</p></div>
+          </div>
+        </li>
       
         <li>
           <a class='text-blue-600 font-bold hover:bg-blue-50' href='demo/custom-style'>
@@ -419,7 +521,7 @@
       
         
           <span class='font-mono text-sm tracking-tighter' title='And rendered with /templates/layouts/book'>
-            0.1.31.3
+            0.1.31.4
           </span>
         
       
