@@ -19,7 +19,7 @@
 
   
   <!-- CSSSTART -->
-	<link rel="stylesheet" href="emanote-compiled-a84ec183f5c4c25e3efefc976a409536.css" />
+	<link rel="stylesheet" href="emanote-compiled-d636c42af03624054cc2e4f5c21bc8d8.css" />
   <!-- CSSEND -->
 
   <!-- Heist error element -->
@@ -83,8 +83,8 @@
             </li>
           
             <li class='inline-flex items-center'>
-              <a class='px-1 font-bold' href='apps'>
-                Apps
+              <a class='px-1 font-bold' href='resources'>
+                Resources
               </a>
               <svg fill='currentColor' viewBox='0 0 20 20' class='w-auto h-5 text-gray-400'>
                 <path fill-rule='evenodd' d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z' clip-rule='evenodd'></path>
@@ -313,8 +313,8 @@
       </svg>
       
   
-    <a class='font-bold hover:underline truncate' title='Apps' href='apps'>
-      Apps
+    <a class='font-bold hover:underline truncate' title='Resources' href='resources'>
+      Resources
     </a>
     
       
@@ -345,7 +345,7 @@
       </svg>
       
   
-    <a class='font-bold text-blue-600 hover:underline truncate' title='Visual Studio Code' href='apps/vscode'>
+    <a class='font-bold text-blue-600 hover:underline truncate' title='Visual Studio Code' href='resources/vscode'>
       Visual Studio Code
     </a>
     
@@ -357,6 +357,43 @@
   -->
   
     
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='emanote-template' href='resources/emanote-template'>
+      emanote-template
+    </a>
+    
+      
+        
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
   
 </div>
     
@@ -461,7 +498,7 @@
 </div>
   
     <p class='mb-3'>
-      <a href='https://code.visualstudio.com/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Visual Studio Code</a> is an open source editor that you can use to edit your plain-text notes. See <a href='start' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>Getting Started</a> for a template notebook that works with it.
+      <a href='https://code.visualstudio.com/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Visual Studio Code</a> is an open source editor that you can use to edit your plain-text notes. See <a href='resources/emanote-template' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>emanote-template</a> for a template notebook that includes extensions pre-configured for VSCode.
     </p>
   
 </article>
@@ -471,6 +508,18 @@
     <ul class='space-y-1'>
       
         <li>
+          <a class='text-blue-600 font-bold hover:bg-blue-50' href='resources/emanote-template'>
+            emanote-template
+          </a>
+          <div class='mb-4 overflow-auto text-sm text-gray-500'>
+            <!-- TODO: How to style the backlinks list item element? Or render each separately?
+              Also, group contexts from same source.
+            -->
+            <div><p><a href='https://github.com/srid/emanote-template' class='text-gray-600 hover:underline' target='_blank' rel='noopener'>emanote-template</a> is a Git repository that comes up with ready-made settings for editing notes in <a href='resources/vscode' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Visual Studio Code</a> and publishing to GitHub Pages.</p></div>
+          </div>
+        </li>
+      
+        <li>
           <a class='text-blue-600 font-bold hover:bg-blue-50' href='start'>
             Getting Started
           </a>
@@ -478,7 +527,7 @@
             <!-- TODO: How to style the backlinks list item element? Or render each separately?
               Also, group contexts from same source.
             -->
-            <div>If using emanote-template, open the notebook in <a href='apps/vscode' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Visual Studio Code</a> and install the recommended extensions.</div>
+            <div>If using <a href='resources/emanote-template' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>emanote-template</a>, open the notebook in <a href='resources/vscode' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Visual Studio Code</a> and install the recommended extensions.</div>
           </div>
         </li>
       
@@ -490,7 +539,7 @@
             <!-- TODO: How to style the backlinks list item element? Or render each separately?
               Also, group contexts from same source.
             -->
-            <div><p>If your image is already copied in the OS clipboard—many screenshoting tools<sup>*</sup> already provide this capability—and if you use <a href='apps/vscode' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Visual Studio Code</a>, you can use the <a href='https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image' class='text-gray-600 hover:underline' target='_blank' rel='noopener'>Paste Image</a> extension to <em>directly paste</em> it in your Markdown note. This does the following,</p></div>
+            <div><p>If your image is already copied in the OS clipboard—many screenshoting tools<sup>*</sup> already provide this capability—and if you use <a href='resources/vscode' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Visual Studio Code</a>, you can use the <a href='https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image' class='text-gray-600 hover:underline' target='_blank' rel='noopener'>Paste Image</a> extension to <em>directly paste</em> it in your Markdown note. This does the following,</p></div>
           </div>
         </li>
       
@@ -511,7 +560,7 @@
       
         
           <span class='font-mono text-sm tracking-tighter' title='And rendered with /templates/layouts/book'>
-            0.1.32.0
+            0.1.32.1
           </span>
         
       
