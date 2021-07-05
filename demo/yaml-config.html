@@ -631,6 +631,18 @@
     <ul class='space-y-1'>
       
         <li>
+          <a class='text-green-600 font-bold hover:bg-green-50' href='demo/markdown'>
+            <em>Extended</em> Markdown <span class='emoji' data-emoji='writing_hand' style='font-family: emoji'>✍️</span>
+          </a>
+          <div class='mb-4 overflow-auto text-sm text-gray-500'>
+            <!-- TODO: How to style the backlinks list item element? Or render each separately?
+              Also, group contexts from same source.
+            -->
+            <div><p>In order to enable syntax highlighting, you must use a client-side JavaScript highlighter, such as <a href='https://prismjs.com/' class='text-gray-600 hover:underline' target='_blank' rel='noopener'>PrismJS</a>, and add it to <code>page.headHtml</code> of <a href='demo/yaml-config' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>YAML configuration</a> (if adding to all or multiple routes) or Markdown frontmatter (if adding to a single route):</p></div>
+          </div>
+        </li>
+      
+        <li>
           <a class='text-green-600 font-bold hover:bg-green-50' href='demo/custom-style'>
             Custom CSS styling
           </a>
@@ -651,18 +663,6 @@
               Also, group contexts from same source.
             -->
             <div><p>You should expect the above text to appear styled like a yellow sticky note, because the default <a href='demo/yaml-config' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>index.yaml</a> specifies a “sticky-note” class, which rewrites to a list of Tailwind classes, and that class in turn is (re)used in Markdown notes.</p></div>
-          </div>
-        </li>
-      
-        <li>
-          <a class='text-green-600 font-bold hover:bg-green-50' href='demo/markdown'>
-            <em>Extended</em> Markdown <span class='emoji' data-emoji='writing_hand' style='font-family: emoji'>✍️</span>
-          </a>
-          <div class='mb-4 overflow-auto text-sm text-gray-500'>
-            <!-- TODO: How to style the backlinks list item element? Or render each separately?
-              Also, group contexts from same source.
-            -->
-            <div><p>In order to enable syntax highlighting, you must use a client-side JavaScript highlighter, such as <a href='https://prismjs.com/' class='text-gray-600 hover:underline' target='_blank' rel='noopener'>PrismJS</a>, and add it to <code>page.headHtml</code> of <a href='demo/yaml-config' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>YAML configuration</a> (if adding to all or multiple routes) or Markdown frontmatter (if adding to a single route):</p></div>
           </div>
         </li>
       
@@ -689,7 +689,7 @@
       
         
           <span class='font-mono text-sm tracking-tighter' title='And rendered with /templates/layouts/book'>
-            0.1.36.1
+            0.1.37.0
           </span>
         
       
