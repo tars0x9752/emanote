@@ -90,15 +90,15 @@ h1, h2 {
   font-size: inherit;
   font-weight: inherit;
 }
-h1, p, h2, dl, dd, h3, pre {
+h1, p, h2, dl, dd, pre {
+  margin: 0;
+}
+h1, p, h2, h3 {
   margin: 0;
 }
 h1, h2, h3 {
   font-size: inherit;
   font-weight: inherit;
-}
-h1, p, h2, h3 {
-  margin: 0;
 }
 img {
   border-style: solid;

@@ -19,7 +19,7 @@
 
   
   <!-- CSSSTART -->
-	<link rel="stylesheet" href="emanote-compiled-508437265f8b1c7850cdba9b5eb48c9f.css" />
+	<link rel="stylesheet" href="emanote-compiled-05fbf7a3bdf2bfb855a87b85faeffdf6.css" />
   <!-- CSSEND -->
 
   <!-- Heist error element -->
@@ -650,7 +650,7 @@
     <!-- DoNotFormat -->
    you can make use of CSS grids as provided by Tailwind’s classes.
     </p>
-  <div class='grid grid-cols-1 lg:grid-cols-2 grid-flow-row gap-0 p-3 bg-gray-500'><section title='Embedded note' class='p-4 mx-2 mb-2 bg-white border-2 rounded-lg shadow-inner'>
+  <div class='grid grid-flow-row grid-cols-1 gap-0 p-3 bg-gray-500 lg:grid-cols-2'><section title='Embedded note' class='p-4 mx-2 mb-2 bg-white border-2 rounded-lg shadow-inner'>
   <header class='flex items-center justify-center text-2xl italic bg-blue-50 rounded py-1 px-2 mb-3'>
     <a href='examples'>
       Examples
@@ -774,7 +774,7 @@
             1.
           </header>
           <div class='inline-block mb-2 ml-4'>
-            If you are viewing this page on mobile or smaller screens, the embedded notes will be stacked on top of one another because we use Tailwind’s <a href='https://tailwindcss.com/docs/responsive-design' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>responsive classes</a>. Incidentally, we use the <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>{class=".."}</code> syntax, rather than the <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>{.someClass}</code> syntax, only because the former is <a href='https://github.com/jgm/commonmark-hs/issues/76' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>more lenient</a> in accept non-standard class names, such as the Tailwind responsive classes (ie. <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>lg:grid-cols-2</code>).
+            If you are viewing this page on mobile or smaller screens, the embedded notes will be stacked on top of one another because we use Tailwind’s <a href='https://tailwindcss.com/docs/responsive-design' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>responsive classes</a>. Incidentally, we use the <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>{class=".."}</code> syntax, rather than the <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>{.someClass}</code> syntax, only because the former is <a href='https://github.com/jgm/commonmark-hs/issues/76' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>more lenient</a> in accepting non-standard class names, such as the Tailwind responsive classes (eg. <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>lg:grid-cols-2</code>).
           </div>
         </div>
       
@@ -794,7 +794,7 @@
             <!-- TODO: How to style the backlinks list item element? Or render each separately?
               Also, group contexts from same source.
             -->
-            <div><p>You can highlight any <span class='bg-yellow-200 px-2 py-0.5 rounded-xl'>inline text</span> by wraping them in <code>==</code> (ie. <code>==inline text==</code>).<sup>*</sup> The CSS style for highlighted inlines can be specified in <a href='demo/custom-style' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>index.yaml</a>.</p></div>
+            <div><p>You can highlight any <span class='bg-yellow-200 px-2 py-0.5 rounded-xl'>inline text</span> by wraping them in <code>==</code> (ie. <code>==inline text==</code>).<sup>*</sup> The CSS style for highlighted inlines can be specified in <a href='demo/custom-style' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>index.yaml</a>. Regular Markdown syntax, including emojis, can be mixed in with highlighted inlines to <span class='bg-yellow-200 px-2 py-0.5 rounded-xl'>🍓 give a <strong>distinction</strong> on top</span> of it all.</p></div>
           </div>
         </li>
       
@@ -821,7 +821,7 @@
       
         
           <span class='font-mono text-sm tracking-tighter' title='And rendered with /templates/layouts/book'>
-            0.1.37.2
+            0.1.37.3
           </span>
         
       

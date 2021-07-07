@@ -19,7 +19,7 @@
 <script src='https://cdn.jsdelivr.net/combine/npm/prismjs@1.23.0/prism.min.js,npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js'></script>
   
   <!-- CSSSTART -->
-	<link rel="stylesheet" href="emanote-compiled-508437265f8b1c7850cdba9b5eb48c9f.css" />
+	<link rel="stylesheet" href="emanote-compiled-05fbf7a3bdf2bfb855a87b85faeffdf6.css" />
   <!-- CSSEND -->
 
   <!-- Heist error element -->
@@ -784,7 +784,7 @@
     <p class='mb-3'>
       Add Twitter-like hashtags anywhere in Markdown file. They can also be added to the YAML frontmatter. Hash tags can also be “hierarchical”, for instance: <span class='font-bold bg-gray-100 py-0.5 px-2 rounded-lg' title='Tag' data-tag='emanote/syntax/demo'><a href='-/tags/emanote/syntax/demo' title='Tag' class='text-blue-600 font-bold hover:underline'>#emanote/syntax/demo</a></span>
     </p>
-  <h3 id='hightlighting' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Hightlighting</h3>
+  <h2 id='hightlighting' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Hightlighting</h2>
     <p class='mb-3'>
       You can highlight any <span class='bg-yellow-200 px-2 py-0.5 rounded-xl'>inline text</span> by wraping them in <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>==</code> (ie. <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>==inline text==</code>).
     <!-- DoNotFormat -->
@@ -793,7 +793,7 @@
     -->
     <sup class='px-0.5'><a class='text-blue-600 hover:underline' href='javascript:;' onclick="document.location.hash='#fn3';">3</a></sup>
     <!-- DoNotFormat -->
-   The CSS style for highlighted inlines can be specified in <a href='demo/custom-style' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>index.yaml</a>.
+   The CSS style for highlighted inlines can be specified in <a href='demo/custom-style' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>index.yaml</a>. Regular Markdown syntax, including emojis, can be mixed in with highlighted inlines to <span class='bg-yellow-200 px-2 py-0.5 rounded-xl'>🍓 give a <strong>distinction</strong> on top</span> of it all.
     </p>
   <h2 id='code-syntax-highlighting' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Code Syntax Highlighting</h2>
     <p class='mb-3'>
@@ -830,7 +830,7 @@ fib(1000)</code></pre></div>
             2.
           </header>
           <div class='inline-block mb-2 ml-4'>
-            Second footnote example
+            Second footnote example. Footnotes <em>within</em><sup>*</sup> footnotes are not handled.
           </div>
         </div>
       
@@ -867,7 +867,7 @@ fib(1000)</code></pre></div>
       
         
           <span class='font-mono text-sm tracking-tighter' title='And rendered with /templates/layouts/book'>
-            0.1.37.2
+            0.1.37.3
           </span>
         
       
