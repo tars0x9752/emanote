@@ -539,14 +539,17 @@ ul {
 .mr-2 {
   margin-right: 0.5rem;
 }
-.ml-4 {
-  margin-left: 1rem;
+.ml-6 {
+  margin-left: 1.5rem;
 }
 .mt-6 {
   margin-top: 1.5rem;
 }
 .mt-8 {
   margin-top: 2rem;
+}
+.ml-4 {
+  margin-left: 1rem;
 }
 .hover\:opacity-80:hover {
   opacity: 0.8;
