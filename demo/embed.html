@@ -19,7 +19,7 @@
 
   
   <!-- CSSSTART -->
-	<link rel="stylesheet" href="emanote-compiled-8948ad092b4031bbe56f3494fe013c37.css" />
+	<link rel="stylesheet" href="emanote-compiled-ef1d90c495ca6526cc94e0ea0c93527c.css" />
   <!-- CSSEND -->
 
   <!-- Heist error element -->
@@ -687,15 +687,27 @@
     <p class='mb-3'>
       Embedding image files as, say, <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>![[disaster-girl.jpg]]</code> is equivalent to <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>![](path/to/disaster-girl.jpg))</code>. See also the tip: <a href='tips/adding-images' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>Adding Images</a>.
     </p>
-  <img class='mb-3' src='demo/disaster-girl.jpg' alt='[[disaster-girl.jpg]]' /><h3 id='videos' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Videos</h3>
+  
+    <p class='mb-3'>
+      <img class='inline mb-3' src='demo/disaster-girl.jpg' alt='[[disaster-girl.jpg]]' style='width: inherit;' />
+    </p>
+  
+    <p class='mb-3'>
+      It is also posible to add images inline (example, here’s the site favicon: <span class='w-6'><img class='inline mb-3' src='favicon.svg' alt='[[favicon.svg]]' style='width: inherit;' /></span>) say in the middle of a paragraph.
+    </p>
+  <h3 id='videos' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Videos</h3>
     <p class='mb-3'>
       The following is the result of using <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>![[death-note.mp4]]</code>.
     </p>
-  <video class='mb-3' autoplay loop muted>
+  
+    <p class='mb-3'>
+      <video class='mb-3' autoplay loop muted>
   <source src='demo/death-note.mp4' />
   <p>Your browser doesn't support HTML5 video. Here is a <a href='demo/death-note.mp4'>link to the
       video</a> instead.</p>
 </video>
+    </p>
+  
     <div title='Footnotes' class='pt-2 mt-8 space-y-1 text-gray-500 transform scale-x-90 border-t-2'>
       <header class='font-semibold'>Footnotes</header>
       
@@ -770,7 +782,7 @@
     
       
         <span class='font-mono text-sm tracking-tighter' title='And rendered with /templates/layouts/book'>
-          0.1.42.0
+          0.1.43.0
         </span>
       
     

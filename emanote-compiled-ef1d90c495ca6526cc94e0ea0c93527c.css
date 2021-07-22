@@ -762,6 +762,9 @@ ul {
 .w-5 {
   width: 1.25rem;
 }
+.w-6 {
+  width: 1.5rem;
+}
 .z-40 {
   z-index: 40;
 }
