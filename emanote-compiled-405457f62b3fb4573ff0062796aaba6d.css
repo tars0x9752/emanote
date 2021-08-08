@@ -101,6 +101,9 @@ h1, h2, h3 {
   font-size: inherit;
   font-weight: inherit;
 }
+h1, p, pre {
+  margin: 0;
+}
 h1, p, h2, dl, dd, pre {
   margin: 0;
 }
@@ -141,6 +144,10 @@ input:-ms-input-placeholder {
 input::-ms-input-placeholder {
   opacity: 1;
   color: #9ca3af;
+}
+pre, code {
+  font-size: 1em;
+  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 svg, img {
   display: block;
@@ -555,6 +562,9 @@ ul {
 .ml-4 {
   margin-left: 1rem;
 }
+.max-w-prose {
+  max-width: 65ch;
+}
 .hover\:opacity-80:hover {
   opacity: 0.8;
 }
@@ -723,6 +733,10 @@ ul {
   --tw-text-opacity: 1;
   color: rgba(16, 185, 129, var(--tw-text-opacity));
 }
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgba(17, 24, 39, var(--tw-text-opacity));
+}
 .truncate {
   overflow: hidden;
   -o-text-overflow: ellipsis;
@@ -848,6 +862,9 @@ ul {
   }
   .md\:mb-8 {
     margin-bottom: 2rem;
+  }
+  .md\:mt-4 {
+    margin-top: 1rem;
   }
   .md\:sticky {
     position: sticky;
