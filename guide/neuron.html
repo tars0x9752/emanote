@@ -467,33 +467,25 @@
 </div>
   
     <p class='mb-3'>
-      TODO
+      To use Emanote in your existing notebook,
     </p>
   
-    <p class='mb-3'>
-      Neuron notes should mostly work, except for the below:
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
+    <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
       
         <li>
-          Neuron-like layout should be explicitly selected; see <a href='demo/neuron-layout' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkBranch'>Neuron-like layout</a>
+          Configure it to use <a href='demo/neuron-layout' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>Neuron-like layout</a>
         </li>
       
         <li>
-          Replace <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>z:zettels</code> with Obsidian-style queries (<a href='demo' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>see demo</a>)
+          In all notes, replace neuron’s <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>z:zettels</code>-style <a href='https://neuron.zettel.page/tag-queries' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>tag queries</a> with Obsidian-style queries. See <a href='demo' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>see demo</a>.
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          Query results do not impact graph connections (thus backlinks). If you want to establish connections to multiple notes, do it by explicitly linking to them individually. Emanote chose this option, because it was simpler to implement. Users are encouraged to try to persuade the author otherwise if there is a compelling rationale.
+          Note: Query results do not impact graph connections (thus backlinks). If you want to establish connections to multiple notes, do it by explicitly linking to them individually. Emanote chose this option, because it was simpler to implement. Users are encouraged to try to persuade the author otherwise if there is a compelling rationale.
         </li>
       
     </ul>
   
-        </li>
-      
-        <li>
-          No RSS support yet.
         </li>
       
     </ul>
@@ -509,7 +501,11 @@
         </li>
       
         <li>
-          Flexible wikilins (link to directories, or based on path, eg: <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>[[Foo/Bar]]</code>)
+          Flexible WikiLinks (link to directories, or based on path, eg: <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>[[Foo/Bar]]</code>) including <a href='demo/file-links' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>File WikiLinks</a>.
+        </li>
+      
+        <li>
+          Static files can be placed anywhere (not just in <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>./static</code> folder)
         </li>
       
         <li>
@@ -517,11 +513,15 @@
         </li>
       
         <li>
+          Hierarchical tag index at <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>/-/tags.html</code>.
+        </li>
+      
+        <li>
           Full theming (customize HTML fully)
         </li>
       
         <li>
-          YAML based configuration at per-route level
+          <a href='demo/yaml-config' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>YAML based configuration</a> at per-route level
         </li>
       
         <li>
