@@ -19,7 +19,7 @@
 
   
   <!-- CSSSTART -->
-	<link rel="stylesheet" href="emanote-compiled-d4d38756f15faccea8011d2230a35ff9.css" />
+	<link rel="stylesheet" href="emanote-compiled-df8030b798295413b5d700747fba3dce.css" />
   <!-- CSSEND -->
 
   <!-- Heist error element -->
@@ -151,7 +151,7 @@
 
 
   
-
+  
 
 <!-- Rendering of this tree -->
 <div class='pl-2'>
@@ -159,9 +159,8 @@
   <div class='flex items-center my-2 space-x-2 justify-left'>
     
     
-      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
-        </path>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-500' viewBox='0 0 20 20' fill='currentColor'>
+        <path d='M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z'></path>
       </svg>
     
   
@@ -170,7 +169,10 @@
     </a>
     
       
-        
+        <span class='text-gray-300' title='1 children inside'>
+          1
+        </span>
+      
     
   </div>
 
@@ -753,7 +755,7 @@
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          Follow the <a href='https://github.com/srid/emanote#emanote' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>README on GitHub</a> to install Emanote
+          <a href='start/install' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>Install Emanote</a>
         </li>
       
         <li>
@@ -769,11 +771,11 @@
         </li>
       
         <li>
-          Run <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>PORT=8080 emanote</code> on that notebook
+          Run <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>PORT=8080 emanote</code> in terminal after <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>cd</code>’ing to that notebook folder; this will launch the live server.
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          Or <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>mkdir /tmp/output; emanote gen /tmp/output</code> to generate static files
+          Or, if you only want to generate the HTML files (for deployment), run <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>mkdir /tmp/output; emanote gen /tmp/output</code>.
         </li>
       
     </ul>
@@ -781,49 +783,9 @@
         </li>
       
     </ul>
-  <h3 id='other-ways-to-obtain-emanote' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Other ways to obtain Emanote</h3>
-    <p class='mb-3'>
-      If you do not wish to use Nix, you may use Emanote in one of the following ways:
-    </p>
-  <h2 id='pre-built-executable' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Pre-built executable</h2>
-    <p class='mb-3'>
-      You may try the self-contained executable bundle on Linux or Windows Subsystem for Linux (WSL). They are built off the latest sources in GitHub Actions CI. For macOS, see the Docker section below.
-    </p>
   
-    <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
-      
-        <li>
-          Click the latest (passed) entry in <a href='https://github.com/srid/emanote/actions?query=branch%3Amaster' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>CI workflows</a>
-        </li>
-      
-        <li>
-          Download “emanote-binary” (a zip file), and extract it.
-        </li>
-      
-        <li>
-          Run the binary in the zip file, as <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>./emanote --version</code> to verify that everything works
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          The first time you run this, it will take a few seconds to bootstrap.
-        </li>
-      
-        <li>
-          This binary is produced using the <a href='https://nixos.org/manual/nix/unstable/command-ref/new-cli/nix3-bundle.html' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>experimental nix bundle</a> feature. Do not interrupt it (Ctrl+C) during its <em>first</em> run; doing so might break that binary permanently on that system.
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-    </ul>
-  <h2 id='docker-image' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Docker image</h2>
     <p class='mb-3'>
-      <a href='resources/emanote-template' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>emanote-template</a> uses the official Docker image, which can be used as
-    </p>
-  <div class='py-0.5 mb-3 text-sm'><pre><code class='language-none'>docker run -v $PWD:/data sridca/emanote emanote --layers "/data" gen /data/output.docker</code></pre></div>
-    <p class='mb-3'>
-      
+      From here, either visit <a href='guide' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>Guide</a> or <a href='demo' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>Demo</a>.
     </p>
   
   </div>
