@@ -107,7 +107,10 @@ h1, p, pre {
 h1, p, h2, dl, dd, pre {
   margin: 0;
 }
-h1, h2, p, h3, pre {
+h1, h2, p {
+  margin: 0;
+}
+h1, p, pre, h2 {
   margin: 0;
 }
 img {
