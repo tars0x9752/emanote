@@ -19,7 +19,7 @@
 
   
   <!-- CSSSTART -->
-	<link rel="stylesheet" href="emanote-compiled-405457f62b3fb4573ff0062796aaba6d.css" />
+	<link rel="stylesheet" href="emanote-compiled-4e80e5e86ca7257488f556c6a21ff5d9.css" />
   <!-- CSSEND -->
 
   <!-- Heist error element -->
@@ -705,6 +705,38 @@
       
         <li>
           Or <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>mkdir /tmp/output; emanote gen /tmp/output</code> to generate static files
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+    </ul>
+  <h2 id='pre-built-executable' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Pre-built executable</h2>
+    <p class='mb-3'>
+      If you do not wish to use Nix, you may try the self-contained executable bundle on Linux or Windows Subsystem for Linux (WSL). They are built off the latest sources in GitHub Actions CI.
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
+      
+        <li>
+          Click the latest (passed) entry in <a href='https://github.com/srid/emanote/actions?query=branch%3Amaster' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>CI workflows</a>
+        </li>
+      
+        <li>
+          Download “emanote-binary” (a zip file), and extract it.
+        </li>
+      
+        <li>
+          Run the binary in the zip file, as <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>./emanote --version</code> to verify that everything works
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          The first time you run this, it will take a few seconds bootstrap (unpack dependencies).
+        </li>
+      
+        <li>
+          Note that this binary is produced using the <a href='https://nixos.org/manual/nix/unstable/command-ref/new-cli/nix3-bundle.html' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>experimental nix bundle</a> feature. Do not interrupt it (Ctrl+C) during the first run; it might break that binary permanently.
         </li>
       
     </ul>
