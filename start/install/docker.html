@@ -554,7 +554,7 @@
 </div>
   
     <p class='mb-3'>
-      The official Docker image, which is built in CI, can be uses as follows:
+      The official Docker image, which is built in CI, can be used as follows:
     </p>
   <div class='py-0.5 mb-3 text-sm'><pre><code class='sh language-sh'>cd /path/to/notebook
 docker run -v $PWD:/data sridca/emanote emanote --layers "/data" gen /data/output.docker
@@ -582,6 +582,18 @@ open ./output.docker/index.html</code></pre></div><h2 id='links' class='inline-b
               Also, group contexts from same source.
             -->
             <div><p><a href='https://github.com/srid/emanote-template' class='text-gray-600 hover:underline' target='_blank' rel='noopener'>emanote-template</a> is a Git repository that comes up with ready-made settings for editing notes in <a href='resources/vscode' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Visual Studio Code</a> and publishing to GitHub Pages (using the <a href='start/install/docker' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Docker image</a>).</p></div>
+          </div>
+        </li>
+      
+        <li>
+          <a class='text-blue-600 font-bold hover:bg-blue-50' href='start/install/binary'>
+            Pre-built executable binary
+          </a>
+          <div class='mb-4 overflow-auto text-sm text-gray-500'>
+            <!-- TODO: How to style the backlinks list item element? Or render each separately?
+              Also, group contexts from same source.
+            -->
+            <div><p>You may try the self-contained executable bundle on Linux or Windows Subsystem for Linux (WSL). They are built off the latest sources in GitHub Actions CI. For macOS, try the <a href='start/install/docker' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Docker image</a>.</p></div>
           </div>
         </li>
       

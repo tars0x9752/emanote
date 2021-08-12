@@ -554,7 +554,7 @@
 </div>
   
     <p class='mb-3'>
-      You may try the self-contained executable bundle on Linux or Windows Subsystem for Linux (WSL). They are built off the latest sources in GitHub Actions CI. For macOS, see the Docker section below.
+      You may try the self-contained executable bundle on Linux or Windows Subsystem for Linux (WSL). They are built off the latest sources in GitHub Actions CI. For macOS, try the <a href='start/install/docker' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>Docker image</a>.
     </p>
   
     <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
@@ -585,6 +585,13 @@
       
         <li>
           This binary is produced using the <a href='https://nixos.org/manual/nix/unstable/command-ref/new-cli/nix3-bundle.html' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>experimental nix bundle</a> feature. You mileage may vary.
+    <!-- DoNotFormat -->
+    <!-- We use JavaScript because anchor links won't work if there is a <base> tag;
+         see https://stackoverflow.com/a/34765348 
+    -->
+    <sup class='px-0.5'><a class='text-blue-600 hover:underline' href='javascript:;' onclick="document.location.hash='#fn1';">1</a></sup>
+    <!-- DoNotFormat -->
+  
         </li>
       
     </ul>
@@ -592,6 +599,20 @@
         </li>
       
     </ul>
+  
+    <div title='Footnotes' class='pt-2 mt-8 space-y-1 text-gray-500 transform scale-x-90 border-t-2'>
+      <header class='font-semibold'>Footnotes</header>
+      
+        <div id='fn1'>
+          <header class='italic'>
+            1.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            If the relative path passed in command-line does not work, try passing absolute paths instead.
+          </div>
+        </div>
+      
+    </div>
   
 </article>
             
