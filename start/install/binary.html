@@ -594,9 +594,9 @@
     </ul>
   <h2 id='using-the-binary' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Using the binary</h2>
     <p class='mb-3'>
-      Due to a limitation in nix-bundle you must <em>always</em> pass the absolute path to your notebook in the command line. Instead of running <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>emanote</code>, run:
+      Due to a limitation in nix-bundle you must <em>always</em> pass the absolute path to your notebook in the command line. Instead of running <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>emanote</code> (ie. without arguments), run:
     </p>
-  <div class='py-0.5 mb-3 text-sm'><pre><code class='language-none'>/emanote --layers=$(pwd)</code></pre></div>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='language-none'>emanote --layers=$(pwd)</code></pre></div>
     <p class='mb-3'>
       Likewise, instead of running <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>emanote gen /tmp/output</code>, run:
     </p>
@@ -643,7 +643,7 @@
     
       
         <span class='font-mono text-sm tracking-tighter' title='And rendered with /templates/layouts/book'>
-          0.1.47.0
+          0.1.47.1
         </span>
       
     
