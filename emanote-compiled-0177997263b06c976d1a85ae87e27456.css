@@ -121,6 +121,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+img, svg {
+  display: block;
+  vertical-align: middle;
+}
 input {
   font-family: inherit;
   font-size: 100%;
@@ -150,6 +154,10 @@ input::-ms-input-placeholder {
   opacity: 1;
   color: #9ca3af;
 }
+img, svg, video {
+  display: block;
+  vertical-align: middle;
+}
 img, video {
   max-width: 100%;
   height: auto;
@@ -157,10 +165,6 @@ img, video {
 pre, code {
   font-size: 1em;
   font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-}
-svg, img {
-  display: block;
-  vertical-align: middle;
 }
 sup {
   font-size: 75%;
@@ -170,10 +174,6 @@ sup {
   top: -0.5em;
 }
 svg {
-  display: block;
-  vertical-align: middle;
-}
-svg, img, video {
   display: block;
   vertical-align: middle;
 }
