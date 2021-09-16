@@ -15,14 +15,14 @@
       <base href='/' />
       <link href='favicon.svg' rel='icon' />
     
-    <script src='https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js'></script>
+    <!-- mermaid.js --><script src='https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js'></script>
 <script>
   mermaid.initialize({startOnLoad:false});
   mermaid.init(undefined,document.querySelectorAll(".mermaid"));
 </script>
   
   <!-- CSSSTART -->
-	<link rel="stylesheet" href="emanote-compiled-7d967a1da7916b3532a99d2fe24bff0d.css" />
+	<link rel="stylesheet" href="emanote-compiled-c68ec8af43dbd7c0ef5a1831fcf0659b.css" />
   <!-- CSSEND -->
 
   <!-- Heist error element -->
@@ -655,31 +655,33 @@
     <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
       
         <li>
-          Add a code block with <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>mermaid</code> language
-        </li>
-      
-        <li>
-          Add the following to your <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>page.headHtml</code>, either in frontmatter or <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>index.yaml</code> (see <a href='demo/yaml-config' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>YAML configuration</a>)
-        </li>
-      
-    </ul>
-  <div class='py-0.5 mb-3 text-sm'><pre><code class='yaml language-yaml'>page:
+          Add the following to your <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>page.headHtml</code>, either in frontmatter or <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>index.yaml</code> (see <a href='demo/yaml-config' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>YAML configuration</a>)<div class='border-2 p-1 overflow-auto my-1 bg-gray-50'><div class='py-0.5 mb-3 text-sm'><pre><code class='yaml language-yaml'>page:
   headHtml: |
     &lt;script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"&gt;&lt;/script&gt;
     &lt;script&gt;
       mermaid.initialize({startOnLoad:false});
       mermaid.init(undefined,document.querySelectorAll(".mermaid"));
-    &lt;/script&gt;</code></pre></div>
-    <p class='mb-3'>
-      Then, in the Markdown note, add the following:
-    </p>
-  <div class='py-0.5 mb-3 text-sm'><pre><code class='markdown language-markdown'>```mermaid
+    &lt;/script&gt;</code></pre></div></div>
+        </li>
+      
+        <li>
+          Add a code block with <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>mermaid</code> language<div class='border-2 p-1 overflow-auto my-1 bg-gray-50'><div class='py-0.5 mb-3 text-sm'><pre><code class='markdown language-markdown'>```mermaid
+%%{init: {'theme': 'forest', "flowchart" : { "curve" : "basis" } } }%%
 graph TD;
     A--&gt;B;
     A--&gt;C;
     B--&gt;D;
     C--&gt;D;
-```</code></pre></div><div class='py-0.5 mb-3 text-sm'><pre><code class='mermaid language-mermaid'>graph TD;
+```</code></pre></div></div>
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      The result will be:
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='mermaid language-mermaid'>%%{init: {'theme': 'forest', "flowchart" : { "curve" : "basis" } } }%%
+graph TD;
     A--&gt;B;
     A--&gt;C;
     B--&gt;D;
@@ -775,7 +777,7 @@ graph TD;
     
       
         <span class='font-mono text-sm tracking-tighter' title='And rendered with /templates/layouts/book'>
-          0.1.57.0
+          0.1.58.0
         </span>
       
     
