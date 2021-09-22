@@ -577,7 +577,7 @@
       The official Docker image, which is built in CI, can be used as follows:
     </p>
   <div class='py-0.5 mb-3 text-sm'><pre><code class='sh language-sh'>cd /path/to/notebook
-docker run -v $PWD:/data sridca/emanote emanote --layers "/data" gen /data/output.docker
+docker run -v $PWD:/data sridca/emanote emanote -L "/data" gen /data/output.docker
 open ./output.docker/index.html</code></pre></div><h2 id='links' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Links</h2>
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
@@ -670,7 +670,7 @@ open ./output.docker/index.html</code></pre></div><h2 id='links' class='inline-b
     
       
         <span class='font-mono text-sm tracking-tighter' title='And rendered with /templates/layouts/book'>
-          0.1.60.0
+          0.1.61.0
         </span>
       
     
