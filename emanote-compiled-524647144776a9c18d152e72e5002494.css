@@ -141,9 +141,6 @@ h1, p, pre {
 h1, p, pre, h2 {
   margin: 0;
 }
-h1, p, h2, pre {
-  margin: 0;
-}
 h1, h2, p {
   margin: 0;
 }
