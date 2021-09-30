@@ -21,7 +21,7 @@
 
   
   <!-- CSSSTART -->
-	<link rel="stylesheet" href="emanote-compiled-524647144776a9c18d152e72e5002494.css" />
+	<link rel="stylesheet" href="emanote-compiled-902205beea7c5f124cdd6617e30b6815.css" />
   <!-- CSSEND -->
 
   <!-- Heist error element -->
@@ -792,7 +792,7 @@
             <div class='flex flex-col lg:flex-row lg:space-x-2'>
               
               
-  <div class='p-4 mt-8 bg-gray-100 rounded flex-1'>
+  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
     <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
     <ul class='space-y-1'>
       
@@ -800,24 +800,30 @@
           <a class='text-blue-600 font-bold hover:bg-blue-50' href='demo/custom-style'>
             Custom CSS styling
           </a>
-          <div class='mb-4 overflow-auto text-sm text-gray-500'>
-            <!-- TODO: How to style the backlinks list item element? Or render each separately?
-              Also, group contexts from same source.
-            -->
-            <div><p>Using <a href='https://github.com/jgm/commonmark-hs/blob/master/commonmark-extensions/test/fenced_divs.md' class='text-gray-600 hover:underline' target='_blank' rel='noopener'>fenced_divs</a> with <a href='https://github.com/jgm/commonmark-hs/blob/master/commonmark-extensions/test/attributes.md' class='text-gray-600 hover:underline' target='_blank' rel='noopener'>attributes</a> extension, you can wrap parts of your Markdown using a <a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div' class='text-gray-600 hover:underline' target='_blank' rel='noopener'>div</a>, and then style it en masse. For example, to <a href='demo/embed' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>embed multiple notes</a> in a “matrix” arrangement<sup>*</sup> you can make use of CSS grids as provided by Tailwind’s classes.</p></div>
-          </div>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
+      <div><p>Using <a href='https://github.com/jgm/commonmark-hs/blob/master/commonmark-extensions/test/fenced_divs.md' class='text-gray-600 hover:underline' target='_blank' rel='noopener'>fenced_divs</a> with <a href='https://github.com/jgm/commonmark-hs/blob/master/commonmark-extensions/test/attributes.md' class='text-gray-600 hover:underline' target='_blank' rel='noopener'>attributes</a> extension, you can wrap parts of your Markdown using a <a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div' class='text-gray-600 hover:underline' target='_blank' rel='noopener'>div</a>, and then style it en masse. For example, to <a href='demo/embed' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>embed multiple notes</a> in a “matrix” arrangement<sup>*</sup> you can make use of CSS grids as provided by Tailwind’s classes.</p></div>
+    </div>
+  
+</div>
+          
         </li>
       
         <li>
           <a class='text-blue-600 font-bold hover:bg-blue-50' href='tips/adding-images'>
             Adding Images
           </a>
-          <div class='mb-4 overflow-auto text-sm text-gray-500'>
-            <!-- TODO: How to style the backlinks list item element? Or render each separately?
-              Also, group contexts from same source.
-            -->
-            <div><p>Note that the extension uses the traditional <code>![]()</code> syntax to link to the image, but you may switch to using the <a href='demo/embed' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>wiki-link embedding syntax</a> (<code>![[]]</code>) as it has the advantage of not needing to specify the full path to the image (thus allowing you to the move the image around under the notebook without breaking referring links). <a href='resources/emanote-template' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>emanote-template</a> is already configured to do this by default.</p></div>
-          </div>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
+      <div><p>Note that the extension uses the traditional <code>![]()</code> syntax to link to the image, but you may switch to using the <a href='demo/embed' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>wiki-link embedding syntax</a> (<code>![[]]</code>) as it has the advantage of not needing to specify the full path to the image (thus allowing you to the move the image around under the notebook without breaking referring links). <a href='resources/emanote-template' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>emanote-template</a> is already configured to do this by default.</p></div>
+    </div>
+  
+</div>
+          
         </li>
       
     </ul>
@@ -852,7 +858,7 @@
     
       
         <span class='font-mono text-sm tracking-tighter' title='And rendered with /templates/layouts/book'>
-          0.3.4.0
+          0.3.5.0
         </span>
       
     
