@@ -4,14 +4,14 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Using on Windows – Emanote
+    Using on Nix/NixOS – Emanote
   </title>
   
     
       <meta property='og:description' content />
       <meta property='og:site_name' content='Emanote' />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Using on Windows' />
+      <meta property='og:title' content='Using on Nix/NixOS' />
     
     
       <base href='/' />
@@ -510,6 +510,41 @@
     
       <!-- Variable bindings for this tree-->
   
+  
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'>
+        </path>
+      </svg>
+      
+  
+    <a class='font-bold text-blue-600 hover:underline truncate' title='Using on Nix/NixOS' href='tips/nix'>
+      Using on Nix/NixOS
+    </a>
+    
+      
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+    
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
     
   
 
@@ -530,8 +565,8 @@
       </svg>
     
   
-    <a class='hover:underline truncate' title='Using on Nix/NixOS' href='tips/nix'>
-      Using on Nix/NixOS
+    <a class='hover:underline truncate' title='Using on Windows' href='tips/wsl'>
+      Using on Windows
     </a>
     
       
@@ -542,41 +577,6 @@
   <!-- Node's children forest, displayed only on active trees
     TODO: Use <details> to toggle visibility?
   -->
-  
-</div>
-    
-      <!-- Variable bindings for this tree-->
-  
-  
-
-
-  
-
-
-<!-- Rendering of this tree -->
-<div class='pl-2'>
-  <!-- Node's rootLabel-->
-  <div class='flex items-center my-2 space-x-2 justify-left'>
-    
-    
-      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'>
-        </path>
-      </svg>
-      
-  
-    <a class='font-bold text-blue-600 hover:underline truncate' title='Using on Windows' href='tips/wsl'>
-      Using on Windows
-    </a>
-    
-      
-  </div>
-
-  <!-- Node's children forest, displayed only on active trees
-    TODO: Use <details> to toggle visibility?
-  -->
-  
-    
   
 </div>
     
@@ -629,7 +629,7 @@
           <main class='px-4 py-4'>
             <h1 class='flex items-end justify-center mb-4 p-3 bg-blue-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Using on Windows
+    Using on Nix/NixOS
   </a>
 </h1>
             <article class='overflow-auto'>
@@ -642,145 +642,63 @@
 </div>
   
     <p class='mb-3'>
-      To work with Markdown notes using Emanote on Windows, follow these steps.
-    </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
-      
-        <li>
-          Setup Windows Subsystem for Linux (WSL2)
-        </li>
-      
-        <li>
-          Install Visual Studio Code
-        </li>
-      
-        <li>
-          (Optional) Run Syncthing from WSL
-        </li>
-      
-    </ul>
-  <h2 id='setup-wsl2' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Setup WSL2</h2>
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          Follow <a href='https://docs.microsoft.com/en-us/windows/wsl/install-win10' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>these instructions</a> to install WSL2 as well as Ubuntu.
-        </li>
-      
-        <li>
-          <a href='start/install' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>Install Emanote</a> in Ubuntu.
-    <!-- DoNotFormat -->
-    <!-- We use JavaScript because anchor links won't work if there is a <base> tag;
-         see https://stackoverflow.com/a/34765348 
-    -->
-    <sup class='px-0.5'><a class='text-blue-600 hover:underline' href='javascript:;' onclick="document.location.hash='#fn1';">1</a></sup>
-    <!-- DoNotFormat -->
-  
-        </li>
-      
-        <li>
-          Run <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>git clone https://github.com/srid/emanote-template.git</code> to make a local copy of <a href='resources/emanote-template' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>emanote-template</a> in your Ubuntu instance
-        </li>
-      
-        <li>
-          Run <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>emanote</code> inside the emanote-template directory, and make sure you that you can access the webpage in Windows.
-        </li>
-      
-        <li>
-          Press <span xmlhtmlRaw><kbd></span>Ctrl+C<span xmlhtmlRaw></kbd></span> to exit Emanote.
-        </li>
-      
-    </ul>
-  <h2 id='install-visual-studio-code' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Install Visual Studio Code</h2>
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          Install <a href='resources/vscode' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>Visual Studio Code</a> <em>natively</em> on Windows (not WSL).
-        </li>
-      
-        <li>
-          Open VSCode and install the <a href='https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Remote Development</a> extension
-        </li>
-      
-        <li>
-          Press <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>Ctrl+Shift+P</code> and select <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>Remote-WSL: Open folder in WSL</code>
-        </li>
-      
-        <li>
-          Open the aforementioned <a href='resources/emanote-template' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>emanote-template</a> local copy
-        </li>
-      
-        <li>
-          Press <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>Ctrl+Backtick</code> to open Ubuntu Terminal inside VSCode, and in the terminal run <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>emanote</code>.
-        </li>
-      
-        <li>
-          Access the URL it shows, and make sure that you can view the notebook in your native Windows browser.
-        </li>
-      
-        <li>
-          Finally, open a Markdown file and make a change to it, while making sure the the web browser updates in real-time.
-        </li>
-      
-    </ul>
-  <h2 id='syncthing' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Syncthing</h2>
-    <p class='mb-3'>
-      <em>See <a href='tips/sync' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>Synchronizing notes using Syncthing</a></em>
+      Emanote can be easily built using the Nix expressions provided in its source repo.
     </p>
   
     <p class='mb-3'>
-      This step is optional. For best experience with Emanote, we expect your notebook to live inside WSL (not Windows), due to a <a href='https://github.com/microsoft/WSL/issues/4739' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>WSL limitation</a>. Therefore, if you want to synchronize your files using Syncthing, you should install it on WSL Ubuntu, and not natively on Windows.
+      You will need <a href='https://nixos.org/download.html' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Nix</a> version 2.4 or greater.
+    </p>
+  <h2 id='installing-with-nix-flakes' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Installing with Nix Flakes</h2>
+    <p class='mb-3'>
+      This will provide the <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>emanote</code> command in your environment.
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='sh-session language-sh-session'>$ nix profile install github:srid/emanote</code></pre></div><h2 id='using-emanote-as-a-home-manager-service' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Using Emanote as a Home Manager service</h2>
+    <p class='mb-3'>
+      <a href='https://github.com/nix-community/home-manager' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Home Manager</a> is a Nix-based personal configuration manager. If you use Home Manager, then Emanote has a <a href='https://github.com/srid/emanote/blob/master/home-manager-module.nix' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>module</a> that can be imported into your configuration.
     </p>
   
     <p class='mb-3'>
-      If you are on Ubuntu (WSL), simply go to <a href='https://apt.syncthing.net' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>https://apt.syncthing.net</a> and install Syncthing. Then run <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>syncthing</code> to run the syncthing server. You might have to change the IP address (from 127.0.0.1 to 0.0.0.0) in <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>~/.config/syncthing/config.xml</code> in order to expose the service to Windows, in case WSL doesn’t automatically forward it; or, if it does reliably forward it, you might want to change the port number so that it doesn’t conflict with native Windows’ Syncthing if you have that running as well.
+      Merge or import this config into your <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>~/.config/nixpkgs/home.nix</code>:
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='nix language-nix'>{ config, ... }:
+let
+  emanote = import (builtins.fetchTarball "https://github.com/srid/emanote/archive/master.tar.gz");
+in {
+  imports = [ emanote.homeManagerModule ];
+  services.emanote = {
+    enable = true;
+    # host = "127.0.0.1"; # default listen address is 127.0.0.1
+    # port = 7000;        # default http port is 7000
+    notes = [
+      "/home/user/notes"  # add as many layers as you like
+    ];
+    package = emanote.defaultPackage.${builtins.currentSystem};
+  };
+}</code></pre></div>
+    <p class='mb-3'>
+      Re-apply your home-manager configuration the usual way (e.g. <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>home-manager switch</code>).
     </p>
   
     <p class='mb-3'>
-      You can use <a href='https://askubuntu.com/a/1178910' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Task Scheduler</a> to automatically launch WSL Syncthing on Windows logon. Create a Basic tasks that is triggered on user log on, with the action being to start a program <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>C:\Windows\System32\wsl.exe</code> with arguments <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>-d Ubuntu -u &lt;yourusername&gt; syncthing</code>.
+      You will then have an <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>emanote</code> command in your profile, and a systemd user service running a live-preview of your notes.
     </p>
-  
-    <div title='Footnotes' class='pt-2 mt-8 space-y-1 text-gray-500 transform scale-x-90 border-t-2'>
-      <header class='font-semibold'>Footnotes</header>
-      
-        <div id='fn1'>
-          <header class='italic'>
-            1.
-          </header>
-          <div class='inline-block mb-2 ml-4'>
-            You might find the new <a href='https://docs.microsoft.com/en-us/windows/terminal/get-started' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Windows Terminal</a> pleasant to work with.
-          </div>
-        </div>
-      
-    </div>
-  
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='sh-session language-sh-session'>$ home-manager switch
+...
+$ systemctl --user status emanote.service
+● emanote.service - Emanote web server
+     Loaded: loaded (/nix/store/i1af5hdydwcf7y0r55n7fd67dnw5habd-home-manager-files/.config/systemd/user/emanote.service; enabled; vendor preset: enabled)
+     Active: active (running) since Tue 2021-11-02 17:17:04 AWST; 17h ago
+   Main PID: 1705303 (emanote)
+      Tasks: 26 (limit: 38220)
+     Memory: 38.3M
+        CPU: 2.884s
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/emanote.service
+             └─1705303 /nix/store/9hj2cwk1jakfws0d1hpwa221kcni3j45-emanote-0.3.12.1/bin/emanote --layers /nix/store/hr7wp1xvqn48b8gy16sdq6k2csrvr8c1-emanote-config;/home/user/notes</code></pre></div>
   <!-- What goes in this file will appear below the note body-->
 </article>
             <div class='flex flex-col lg:flex-row lg:space-x-2'>
               
               
-  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
-    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
-    <ul class='space-y-1'>
-      
-        <li>
-          <a class='text-blue-600 font-bold hover:bg-blue-50' href='start/install'>
-            Installing
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
-      <div><p>For Windows, see <a href='tips/wsl' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Using on Windows</a>.</p></div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-    </ul>
-  </div>
-
             </div>
             
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
