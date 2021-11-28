@@ -23,7 +23,7 @@
 
   
   <!-- CSSSTART -->
-	<link rel="stylesheet" href="emanote-compiled-0bfe5106e9a3481d485b7612ef956c56.css" />
+	<link rel="stylesheet" href="emanote-compiled-40f11fa9f5439d0e192350cb7f244630.css" />
   <!-- CSSEND -->
 
   <!-- Heist error element -->
@@ -47,7 +47,7 @@
     font-family: 'MavenPro', sans-serif;
   }
 
-  a[data-wikilink-type] {
+  a.mavenLinkBold {
     font-variation-settings: 'wght'500;
   }
 
@@ -678,7 +678,7 @@
     </p>
   <h2 id='wiki-links' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Wiki Links</h2>
     <p class='mb-3'>
-      You can link to a note by placing the filename (without extension) inside double square brackets. For example, <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>[[neuron]]</code> links to the file <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>neuron.md</code> and it will be rendered as <a href='guide/neuron' class='text-blue-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Migrating from neuron</a>. Note that it is using the title of the note automatically; you can specify a custom title as <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>[[neuron|Moving off neuron]]</code> which renders as <a href='guide/neuron' class='text-blue-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Moving off neuron</a> or even force use of filename with <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>[[neuron|neuron]]</code> which renders as <a href='guide/neuron' class='text-blue-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>neuron</a>.
+      You can link to a note by placing the filename (without extension) inside double square brackets. For example, <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>[[neuron]]</code> links to the file <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>neuron.md</code> and it will be rendered as <a href='guide/neuron' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Migrating from neuron</a>. Note that it is using the title of the note automatically; you can specify a custom title as <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>[[neuron|Moving off neuron]]</code> which renders as <a href='guide/neuron' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Moving off neuron</a> or even force use of filename with <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>[[neuron|neuron]]</code> which renders as <a href='guide/neuron' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>neuron</a>.
     </p>
   
     <p class='mb-3'>
@@ -785,7 +785,7 @@
     </p>
   
     <p class='mb-3'>
-      Unchecked tasks will appear in the task index available at <a href='-/tasks' class='text-blue-600 font-semibold hover:underline'>/-/tasks</a>.
+      Unchecked tasks will appear in the task index available at <a href='-/tasks' class='text-blue-600 mavenLinkBold hover:underline'>/-/tasks</a>.
     </p>
   <h2 id='definition-lists' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Definition lists</h2>
     <p class='mb-3'>
@@ -975,7 +975,7 @@
     </p>
   <h2 id='hash-tags' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Hash Tags</h2>
     <p class='mb-3'>
-      Add Twitter-like hashtags anywhere in Markdown file. They can also be added to the YAML frontmatter. Hash tags can also be “hierarchical”, for instance: <span class='font-bold bg-gray-100 py-0.5 px-2 rounded-lg emanote:inline-tag:emanote/syntax/demo' title='Tag' data-tag='emanote/syntax/demo'><a href='-/tags/emanote/syntax/demo' title='Tag' class='text-blue-600 font-semibold hover:underline'>#emanote/syntax/demo</a></span>
+      Add Twitter-like hashtags anywhere in Markdown file. They can also be added to the YAML frontmatter. Hash tags can also be “hierarchical”, for instance: <span class='font-bold bg-gray-100 py-0.5 px-2 rounded-lg emanote:inline-tag:emanote/syntax/demo' title='Tag' data-tag='emanote/syntax/demo'><a href='-/tags/emanote/syntax/demo' title='Tag' class='text-blue-600 mavenLinkBold hover:underline'>#emanote/syntax/demo</a></span>
     </p>
   <h2 id='highlighting' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Highlighting</h2>
     <p class='mb-3'>
@@ -986,7 +986,7 @@
     -->
     <sup class='px-0.5'><a class='text-blue-600 hover:underline' href='javascript:;' onclick="document.location.hash='#fn3';">3</a></sup>
     <!-- DoNotFormat -->
-   The CSS style for highlighted inlines can be specified in <a href='demo/custom-style' class='text-blue-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>index.yaml</a>. Regular Markdown syntax, including emojis, can be mixed in with highlighted inlines to <span class='bg-yellow-200 px-2 py-0.5 rounded-xl'>🍓 give a <strong>distinction</strong> on top</span> of it all.
+   The CSS style for highlighted inlines can be specified in <a href='demo/custom-style' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>index.yaml</a>. Regular Markdown syntax, including emojis, can be mixed in with highlighted inlines to <span class='bg-yellow-200 px-2 py-0.5 rounded-xl'>🍓 give a <strong>distinction</strong> on top</span> of it all.
     </p>
   <h2 id='more-extensions' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>More extensions</h2><div class='flex-row space-y-8'><section title='Embedded note' class='p-4 mx-2 mb-2 bg-white border-2 rounded-lg shadow-inner'>
   <header class='flex items-center justify-center text-2xl italic bg-blue-50 rounded py-1 px-2 mb-3'>
@@ -997,7 +997,7 @@
   <div>
     
     <p class='mb-3'>
-      In order to enable syntax highlighting, you must use a client-side JavaScript highlighter, such as <a href='https://prismjs.com/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>PrismJS</a>, and add it to <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>page.headHtml</code> of <a href='demo/yaml-config' class='text-blue-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>YAML configuration</a> (if adding to all or multiple routes) or Markdown frontmatter (if adding to a single route):
+      In order to enable syntax highlighting, you must use a client-side JavaScript highlighter, such as <a href='https://prismjs.com/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>PrismJS</a>, and add it to <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>page.headHtml</code> of <a href='demo/yaml-config' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>YAML configuration</a> (if adding to all or multiple routes) or Markdown frontmatter (if adding to a single route):
     </p>
   <div class='py-0.5 mb-3 text-sm'><pre><code class='yaml language-yaml'>page:
   headHtml: |
@@ -1020,7 +1020,7 @@ fib(1000)</code></pre></div>
   </div>
 </section>
     <p class='mb-3'>
-      <a href='tips/js/mermaid' class='text-blue-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Mermaid Diagrams</a>
+      <a href='tips/js/mermaid' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Mermaid Diagrams</a>
     </p>
   </div>
     <p class='mb-3'>
@@ -1104,7 +1104,7 @@ fib(1000)</code></pre></div>
     </a>
   </div>
   <div>
-    <a href='https://note.ema.srid.ca' target='_blank' title='Generated by Emanote 0.3.15.1'>
+    <a href='https://note.ema.srid.ca' target='_blank' title='Generated by Emanote 0.3.15.2'>
       <img class='w-6 h-6 hover:text-blue-700' src='_emanote-static/emanote-logo.svg' />
     </a>
   </div>

@@ -23,7 +23,7 @@
 
   
   <!-- CSSSTART -->
-	<link rel="stylesheet" href="emanote-compiled-0bfe5106e9a3481d485b7612ef956c56.css" />
+	<link rel="stylesheet" href="emanote-compiled-40f11fa9f5439d0e192350cb7f244630.css" />
   <!-- CSSEND -->
 
   <!-- Heist error element -->
@@ -47,7 +47,7 @@
     font-family: 'MavenPro', sans-serif;
   }
 
-  a[data-wikilink-type] {
+  a.mavenLinkBold {
     font-variation-settings: 'wght'500;
   }
 
@@ -678,7 +678,7 @@
     </p>
   
     <p class='mb-3'>
-      The <a href='https://github.com/jgm/commonmark-hs/blob/master/commonmark-extensions/test/attributes.md' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>attributes extension</a> provides the ability to set CSS classes on inline or block level elements of Markdown. You can also specify a “class map” in <a href='demo/yaml-config' class='text-blue-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>index.yaml</a>, the default value of which provides some builtin-in styles.
+      The <a href='https://github.com/jgm/commonmark-hs/blob/master/commonmark-extensions/test/attributes.md' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>attributes extension</a> provides the ability to set CSS classes on inline or block level elements of Markdown. You can also specify a “class map” in <a href='demo/yaml-config' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>index.yaml</a>, the default value of which provides some builtin-in styles.
     </p>
   <h2 id='built-in-styles' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Built-in styles</h2>
     <p class='mb-3'>
@@ -694,7 +694,7 @@
     </p>
   </div>
     <p class='mb-3'>
-      You should expect the above text to appear styled like a yellow sticky note, because the default <a href='demo/yaml-config' class='text-blue-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>index.yaml</a> specifies a “sticky-note” class, which rewrites to a list of Tailwind classes, and that class in turn is (re)used in Markdown notes.
+      You should expect the above text to appear styled like a yellow sticky note, because the default <a href='demo/yaml-config' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>index.yaml</a> specifies a “sticky-note” class, which rewrites to a list of Tailwind classes, and that class in turn is (re)used in Markdown notes.
     </p>
   <h3 id='highlight-block' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>highlight-block</h3><div class='px-3 py-1 mb-3 rounded bg-blue-100 hover:border-blue-400 hover:shadow border-t-8 border-blue-200'>
     <p class='mb-3'>
@@ -702,7 +702,7 @@
     </p>
   </div><h2 id='advanced-styling' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Advanced styling</h2>
     <p class='mb-3'>
-      Using <a href='https://github.com/jgm/commonmark-hs/blob/master/commonmark-extensions/test/fenced_divs.md' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>fenced_divs</a> with <a href='https://github.com/jgm/commonmark-hs/blob/master/commonmark-extensions/test/attributes.md' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>attributes</a> extension, you can wrap parts of your Markdown using a <a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>div</a>, and then style it en masse. For example, to <a href='demo/embed' class='text-blue-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>embed multiple notes</a> in a “matrix” arrangement
+      Using <a href='https://github.com/jgm/commonmark-hs/blob/master/commonmark-extensions/test/fenced_divs.md' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>fenced_divs</a> with <a href='https://github.com/jgm/commonmark-hs/blob/master/commonmark-extensions/test/attributes.md' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>attributes</a> extension, you can wrap parts of your Markdown using a <a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>div</a>, and then style it en masse. For example, to <a href='demo/embed' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>embed multiple notes</a> in a “matrix” arrangement
     <!-- DoNotFormat -->
     <!-- We use JavaScript because anchor links won't work if there is a <base> tag;
          see https://stackoverflow.com/a/34765348 
@@ -783,19 +783,19 @@
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          <a href='start/install' class='text-blue-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Install Emanote</a>
+          <a href='start/install' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Install Emanote</a>
         </li>
       
         <li>
-          Use your existing notebook, or create one from <a href='resources/emanote-template' class='text-blue-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>emanote-template</a>.
+          Use your existing notebook, or create one from <a href='resources/emanote-template' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>emanote-template</a>.
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          If using <a href='resources/emanote-template' class='text-blue-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>emanote-template</a>, open the notebook in <a href='resources/vscode' class='text-blue-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Visual Studio Code</a> and install the recommended extensions.
+          If using <a href='resources/emanote-template' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>emanote-template</a>, open the notebook in <a href='resources/vscode' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Visual Studio Code</a> and install the recommended extensions.
         </li>
       
         <li>
-          <a href='resources/emanote-template' class='text-blue-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>emanote-template</a> also includes the GitHub Pages workflow for static site deployment.
+          <a href='resources/emanote-template' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>emanote-template</a> also includes the GitHub Pages workflow for static site deployment.
         </li>
       
     </ul>
@@ -817,7 +817,7 @@
     </ul>
   
     <p class='mb-3'>
-      From here, either visit <a href='guide' class='text-blue-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Guide</a> or <a href='demo' class='text-blue-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Demo</a>.
+      From here, either visit <a href='guide' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Guide</a> or <a href='demo' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Demo</a>.
     </p>
   
   </div>
@@ -840,19 +840,19 @@
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          Here is a link to some text file: <a href='demo/Sample.txt' class='text-blue-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>File:Sample.txt</a>
+          Here is a link to some text file: <a href='demo/Sample.txt' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>File:Sample.txt</a>
         </li>
       
         <li>
-          You can also specify the full, or subset of, the path: <a href='demo/Sample.txt' class='text-blue-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>File:demo/Sample.txt</a>
+          You can also specify the full, or subset of, the path: <a href='demo/Sample.txt' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>File:demo/Sample.txt</a>
         </li>
       
         <li>
-          Of course, a custom link text may also be specified: <a href='demo/Sample.txt' class='text-blue-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>Some text file</a>
+          Of course, a custom link text may also be specified: <a href='demo/Sample.txt' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Some text file</a>
         </li>
       
         <li>
-          All of this is equivalent to <a href='demo/Sample.txt' class='text-blue-600 font-semibold hover:underline'>normal linking</a>.
+          All of this is equivalent to <a href='demo/Sample.txt' class='text-blue-600 mavenLinkBold hover:underline'>normal linking</a>.
         </li>
       
     </ul>
@@ -862,7 +862,7 @@
     </p>
   
     <p class='mb-3'>
-      If a wikilink refers to a display-able resource like image or video, it will appear <a href='demo/embed' class='text-blue-600 font-semibold hover:underline' data-wikilink-type='WikiLinkNormal'>embedded</a> in the generated HTML.
+      If a wikilink refers to a display-able resource like image or video, it will appear <a href='demo/embed' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>embedded</a> in the generated HTML.
     </p>
   
   </div>
@@ -897,7 +897,7 @@
     <ul class='space-y-1'>
       
         <li>
-          <a class='text-blue-600 font-medium hover:bg-blue-50' href='demo/markdown'>
+          <a class='text-blue-600 mavenLinkBold hover:bg-blue-50' href='demo/markdown'>
             <em>Extended</em> Markdown <span class='emoji' data-emoji='writing_hand' style='font-family: emoji'>✍️</span>
           </a>
           
@@ -948,7 +948,7 @@
     </a>
   </div>
   <div>
-    <a href='https://note.ema.srid.ca' target='_blank' title='Generated by Emanote 0.3.15.1'>
+    <a href='https://note.ema.srid.ca' target='_blank' title='Generated by Emanote 0.3.15.2'>
       <img class='w-6 h-6 hover:text-blue-700' src='_emanote-static/emanote-logo.svg' />
     </a>
   </div>
