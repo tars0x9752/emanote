@@ -84,15 +84,6 @@ button, [role="button"] {
 b, strong {
   font-weight: bolder;
 }
-button, input {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
-}
 code {
   font-size: 1em;
   font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
@@ -160,38 +151,9 @@ img, video {
   max-width: 100%;
   height: auto;
 }
-input::placeholder {
-  opacity: 1;
-  color: #9ca3af;
-}
-input::webkit-input-placeholder {
-  opacity: 1;
-  color: #9ca3af;
-}
-input::-moz-placeholder {
-  opacity: 1;
-  color: #9ca3af;
-}
-input:-ms-input-placeholder {
-  opacity: 1;
-  color: #9ca3af;
-}
-input::-ms-input-placeholder {
-  opacity: 1;
-  color: #9ca3af;
-}
 img, svg {
   display: block;
   vertical-align: middle;
-}
-input {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
 }
 pre, code {
   font-size: 1em;
@@ -315,10 +277,6 @@ ul {
   --tw-bg-opacity: 1;
   background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
 }
-.checked\:bg-blue-600:checked {
-  --tw-bg-opacity: 1;
-  background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
-}
 .bg-yellow-200 {
   --tw-bg-opacity: 1;
   background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
@@ -358,9 +316,6 @@ ul {
 .hover\:border-blue-500:hover {
   --tw-border-opacity: 1;
   border-color: rgba(59, 130, 246, var(--tw-border-opacity));
-}
-.checked\:border-transparent:checked {
-  border-color: transparent;
 }
 .border-gray-300 {
   --tw-border-opacity: 1;
@@ -475,12 +430,6 @@ ul {
   -ms-flex-wrap: nowrap;
   -webkit-flex-wrap: nowrap;
   flex-wrap: nowrap;
-}
-.items-start {
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
 }
 .items-end {
   -webkit-box-align: end;
@@ -638,6 +587,9 @@ ul {
 .mb-8 {
   margin-bottom: 2rem;
 }
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -779,6 +731,12 @@ ul {
   -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.fill-current {
+  fill: currentColor;
+}
+.stroke-current {
+  stroke: currentColor;
+}
 .text-center {
   text-align: center;
 }
@@ -895,9 +853,6 @@ ul {
 }
 .w-6 {
   width: 1.5rem;
-}
-.w-5 {
-  width: 1.25rem;
 }
 .z-40 {
   z-index: 40;
