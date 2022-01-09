@@ -4,14 +4,14 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Using on Nix/NixOS – Emanote
+    Math – Emanote
   </title>
   
     
       <meta property='og:description' content />
       <meta property='og:site_name' content='Emanote' />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Using on Nix/NixOS' />
+      <meta property='og:title' content='Math' />
     
     
       <base href='/' />
@@ -19,6 +19,22 @@
     
     <!-- Prism.js --><link href='https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-tomorrow.css' rel='stylesheet' />
 <script src='https://cdn.jsdelivr.net/combine/npm/prismjs@1.23.0/prism.min.js,npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js'></script>
+
+<script>
+  window.mathjaxInitialTypesetDone = false;
+  window.MathJax = {
+    startup: {
+      ready: () => {
+        MathJax.startup.defaultReady();
+        MathJax.startup.promise.then(() => {
+          console.log('MathJax typesetting complete');
+          window.mathjaxInitialTypesetDone = true;
+        });
+      }
+    }
+  };
+</script>
+<script async id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
 
 
   
@@ -99,6 +115,15 @@
             <li class='inline-flex items-center'>
               <a class='px-1 font-bold' href='tips'>
                 Tips
+              </a>
+              <svg fill='currentColor' viewBox='0 0 20 20' class='w-auto h-5 text-gray-400'>
+                <path fill-rule='evenodd' d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z' clip-rule='evenodd'></path>
+              </svg>
+            </li>
+          
+            <li class='inline-flex items-center'>
+              <a class='px-1 font-bold' href='tips/js'>
+                JavaScript behaviours
               </a>
               <svg fill='currentColor' viewBox='0 0 20 20' class='w-auto h-5 text-gray-400'>
                 <path fill-rule='evenodd' d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z' clip-rule='evenodd'></path>
@@ -430,7 +455,9 @@
       <!-- Variable bindings for this tree-->
   
     
-  
+      
+      
+    
 
 
 
@@ -443,26 +470,133 @@
   <div class='flex items-center my-2 space-x-2 justify-left'>
     
     
-      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-500' viewBox='0 0 20 20' fill='currentColor'>
-        <path d='M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z'></path>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-700' viewBox='0 0 20 20' fill='currentColor'>
+        <path fill-rule='evenodd' d='M2 6a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1H8a3 3 0 00-3 3v1.5a1.5 1.5 0 01-3 0V6z' clip-rule='evenodd'></path>
+        <path d='M6 12a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 01-2 2H2h2a2 2 0 002-2v-2z'></path>
       </svg>
-    
+      
   
-    <a class='hover:underline truncate' title='JavaScript behaviours' href='tips/js'>
+    <a class='font-bold hover:underline truncate' title='JavaScript behaviours' href='tips/js'>
       JavaScript behaviours
     </a>
     
       
-        <span class='text-gray-300' title='3 children inside'>
-          3
-        </span>
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+    
+      <!-- Variable bindings for this tree-->
+  
+  
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'>
+        </path>
+      </svg>
       
+  
+    <a class='font-bold text-blue-600 hover:underline truncate' title='Math' href='tips/js/math'>
+      Math
+    </a>
+    
+      
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+    
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Mermaid Diagrams' href='tips/js/mermaid'>
+      Mermaid Diagrams
+    </a>
+    
+      
+        
     
   </div>
 
   <!-- Node's children forest, displayed only on active trees
     TODO: Use <details> to toggle visibility?
   -->
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Syntax Highlighting' href='tips/js/syntax-highlighting'>
+      Syntax Highlighting
+    </a>
+    
+      
+        
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+    
   
 </div>
     
@@ -505,7 +639,9 @@
     
       <!-- Variable bindings for this tree-->
   
+    
   
+
 
 
   
@@ -518,23 +654,23 @@
     
     
       <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
         </path>
       </svg>
-      
+    
   
-    <a class='font-bold text-blue-600 hover:underline truncate' title='Using on Nix/NixOS' href='tips/nix'>
+    <a class='hover:underline truncate' title='Using on Nix/NixOS' href='tips/nix'>
       Using on Nix/NixOS
     </a>
     
       
+        
+    
   </div>
 
   <!-- Node's children forest, displayed only on active trees
     TODO: Use <details> to toggle visibility?
   -->
-  
-    
   
 </div>
     
@@ -624,7 +760,7 @@
           <main class='px-4 py-4'>
             <h1 class='flex items-end justify-center mb-4 p-3 bg-blue-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Using on Nix/NixOS
+    Math
   </a>
 </h1>
             <article class='overflow-auto'>
@@ -636,60 +772,39 @@
 </div>
   
     <p class='mb-3'>
-      Emanote can be easily built using the Nix expressions provided in its source repo.
+      <a href='https://www.mathjax.org' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>MathJax</a> can be used to render Math formulas. For example, <span class='math inline'>\(a^2 + b ^ 2 = c\)</span>.
     </p>
   
+    <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
+      
+        <li>
+          Add the following to your <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>page.headHtml</code>, either in frontmatter or <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>index.yaml</code> (see <a href='demo/yaml-config' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>YAML configuration</a>)<div class='py-0.5 mb-3 text-sm'><pre><code class='yaml language-yaml'>page:
+  headHtml: |
+    &lt;script&gt;
+      window.mathjaxInitialTypesetDone = false;
+      window.MathJax = {
+        startup: {
+          ready: () =&gt; {
+            MathJax.startup.defaultReady();
+            MathJax.startup.promise.then(() =&gt; {
+              console.log('MathJax typesetting complete');
+              window.mathjaxInitialTypesetDone = true;
+            });
+          }
+        }
+      };
+    &lt;/script&gt;
+    &lt;script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"&gt;&lt;/script&gt;</code></pre></div>
+        </li>
+      
+    </ul>
+  <h2 id='demo' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Demo</h2>
     <p class='mb-3'>
-      You will need <a href='https://nixos.org/download.html' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Nix</a> version 2.4 or greater.
-    </p>
-  <h2 id='installing-with-nix-flakes' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Installing with Nix Flakes</h2>
-    <p class='mb-3'>
-      This will provide the <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>emanote</code> command in your environment.
-    </p>
-  <div class='py-0.5 mb-3 text-sm'><pre><code class='sh-session language-sh-session'>$ nix profile install github:srid/emanote</code></pre></div><h2 id='using-emanote-as-a-home-manager-service' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Using Emanote as a Home Manager service</h2>
-    <p class='mb-3'>
-      <a href='https://github.com/nix-community/home-manager' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Home Manager</a> is a Nix-based personal configuration manager. If you use Home Manager, then Emanote has a <a href='https://github.com/srid/emanote/blob/master/home-manager-module.nix' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>module</a> that can be imported into your configuration.
-    </p>
-  
-    <p class='mb-3'>
-      Merge or import this config into your <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>~/.config/nixpkgs/home.nix</code>:
-    </p>
-  <div class='py-0.5 mb-3 text-sm'><pre><code class='nix language-nix'>{ config, ... }:
-let
-  emanote = import (builtins.fetchTarball "https://github.com/srid/emanote/archive/master.tar.gz");
-in {
-  imports = [ emanote.homeManagerModule ];
-  services.emanote = {
-    enable = true;
-    # host = "127.0.0.1"; # default listen address is 127.0.0.1
-    # port = 7000;        # default http port is 7000
-    notes = [
-      "/home/user/notes"  # add as many layers as you like
-    ];
-    package = emanote.defaultPackage.${builtins.currentSystem};
-  };
-}</code></pre></div>
-    <p class='mb-3'>
-      Re-apply your home-manager configuration the usual way (e.g. <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>home-manager switch</code>).
+      When <span class='math inline'>\(a \ne 0\)</span>, there are two solutions to <span class='math inline'>\(ax^2 + bx + c = 0\)</span> and they are <span class='math display'>$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</span>
     </p>
   
-    <p class='mb-3'>
-      You will then have an <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>emanote</code> command in your profile, and a systemd user service running a live-preview of your notes.
-    </p>
-  <div class='py-0.5 mb-3 text-sm'><pre><code class='sh-session language-sh-session'>$ home-manager switch
-...
-$ systemctl --user status emanote.service
-● emanote.service - Emanote web server
-     Loaded: loaded (/nix/store/i1af5hdydwcf7y0r55n7fd67dnw5habd-home-manager-files/.config/systemd/user/emanote.service; enabled; vendor preset: enabled)
-     Active: active (running) since Tue 2021-11-02 17:17:04 AWST; 17h ago
-   Main PID: 1705303 (emanote)
-      Tasks: 26 (limit: 38220)
-     Memory: 38.3M
-        CPU: 2.884s
-     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/emanote.service
-             └─1705303 /nix/store/9hj2cwk1jakfws0d1hpwa221kcni3j45-emanote-0.3.12.1/bin/emanote --layers /nix/store/hr7wp1xvqn48b8gy16sdq6k2csrvr8c1-emanote-config;/home/user/notes</code></pre></div>
   <div class='flex items-center justify-center mt-2'>
-  <a class='text-gray-300 hover:text-blue-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/emanote/edit/master/docs/tips/nix.md'>
+  <a class='text-gray-300 hover:text-blue-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/emanote/edit/master/docs/tips/js/math.md'>
     <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
       <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
     </svg>
