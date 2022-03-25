@@ -23,7 +23,7 @@
 
 
   
-  <link href='tailwind.css?instanceId=8703a68e-915b-43bf-8323-e56b1379cc19' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=6d2e226e-8bfe-4e86-99a7-a426c2756edd' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style type='text/css'>
@@ -680,11 +680,11 @@
         </li>
       
         <li>
-          Run <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>git clone https://github.com/srid/emanote-template.git</code> to make a local copy of <a href='resources/emanote-template' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>emanote-template</a> in your Ubuntu instance
+          Run <code class='py-0.5 px-0.5 bg-gray-100'>git clone https://github.com/srid/emanote-template.git</code> to make a local copy of <a href='resources/emanote-template' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>emanote-template</a> in your Ubuntu instance
         </li>
       
         <li>
-          Run <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>emanote</code> inside the emanote-template directory, and make sure you that you can access the webpage in Windows.
+          Run <code class='py-0.5 px-0.5 bg-gray-100'>emanote</code> inside the emanote-template directory, and make sure you that you can access the webpage in Windows.
         </li>
       
         <li>
@@ -704,7 +704,7 @@
         </li>
       
         <li>
-          Press <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>Ctrl+Shift+P</code> and select <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>Remote-WSL: Open folder in WSL</code>
+          Press <code class='py-0.5 px-0.5 bg-gray-100'>Ctrl+Shift+P</code> and select <code class='py-0.5 px-0.5 bg-gray-100'>Remote-WSL: Open folder in WSL</code>
         </li>
       
         <li>
@@ -712,7 +712,7 @@
         </li>
       
         <li>
-          Press <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>Ctrl+Backtick</code> to open Ubuntu Terminal inside VSCode, and in the terminal run <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>emanote</code>.
+          Press <code class='py-0.5 px-0.5 bg-gray-100'>Ctrl+Backtick</code> to open Ubuntu Terminal inside VSCode, and in the terminal run <code class='py-0.5 px-0.5 bg-gray-100'>emanote</code>.
         </li>
       
         <li>
@@ -734,11 +734,11 @@
     </p>
   
     <p class='mb-3'>
-      If you are on Ubuntu (WSL), simply go to <a href='https://apt.syncthing.net' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>https://apt.syncthing.net</a> and install Syncthing. Then run <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>syncthing</code> to run the syncthing server. You might have to change the IP address (from 127.0.0.1 to 0.0.0.0) in <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>~/.config/syncthing/config.xml</code> in order to expose the service to Windows, in case WSL doesn’t automatically forward it; or, if it does reliably forward it, you might want to change the port number so that it doesn’t conflict with native Windows’ Syncthing if you have that running as well.
+      If you are on Ubuntu (WSL), simply go to <a href='https://apt.syncthing.net' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>https://apt.syncthing.net</a> and install Syncthing. Then run <code class='py-0.5 px-0.5 bg-gray-100'>syncthing</code> to run the syncthing server. You might have to change the IP address (from 127.0.0.1 to 0.0.0.0) in <code class='py-0.5 px-0.5 bg-gray-100'>~/.config/syncthing/config.xml</code> in order to expose the service to Windows, in case WSL doesn’t automatically forward it; or, if it does reliably forward it, you might want to change the port number so that it doesn’t conflict with native Windows’ Syncthing if you have that running as well.
     </p>
   
     <p class='mb-3'>
-      You can use <a href='https://askubuntu.com/a/1178910' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Task Scheduler</a> to automatically launch WSL Syncthing on Windows logon. Create a Basic tasks that is triggered on user log on, with the action being to start a program <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>C:\Windows\System32\wsl.exe</code> with arguments <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>-d Ubuntu -u &lt;yourusername&gt; syncthing</code>.
+      You can use <a href='https://askubuntu.com/a/1178910' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Task Scheduler</a> to automatically launch WSL Syncthing on Windows logon. Create a Basic tasks that is triggered on user log on, with the action being to start a program <code class='py-0.5 px-0.5 bg-gray-100'>C:\Windows\System32\wsl.exe</code> with arguments <code class='py-0.5 px-0.5 bg-gray-100'>-d Ubuntu -u &lt;yourusername&gt; syncthing</code>.
     </p>
   
     <div title='Footnotes' class='pt-2 mt-8 space-y-1 text-gray-500 transform scale-x-90 border-t-2'>
@@ -816,7 +816,7 @@
     </a>
   </div>
   <div>
-    <a href='https://emanote.srid.ca' target='_blank' title='Generated by Emanote 0.5.3.0'>
+    <a href='https://emanote.srid.ca' target='_blank' title='Generated by Emanote 0.5.3.1'>
       <img class='w-6 h-6 hover:text-blue-700' src='_emanote-static/emanote-logo.svg' />
     </a>
   </div>
