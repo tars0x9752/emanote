@@ -4,14 +4,14 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Examples – Emanote
+    Pandoc Lua Filters – Emanote Demos
   </title>
   
     
       <meta property='og:description' content />
-      <meta property='og:site_name' content='Emanote' />
+      <meta property='og:site_name' content='Emanote Demos' />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Examples' />
+      <meta property='og:title' content='Pandoc Lua Filters' />
     
     
       <base href='/' />
@@ -97,6 +97,15 @@
             <li class='inline-flex items-center'>
               <a class='px-1 font-bold' href=''>
                 Emanote
+              </a>
+              <svg fill='currentColor' viewBox='0 0 20 20' class='w-auto h-5 text-gray-400'>
+                <path fill-rule='evenodd' d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z' clip-rule='evenodd'></path>
+              </svg>
+            </li>
+          
+            <li class='inline-flex items-center'>
+              <a class='px-1 font-bold' href='demo'>
+                Demo
               </a>
               <svg fill='currentColor' viewBox='0 0 20 20' class='w-auto h-5 text-gray-400'>
                 <path fill-rule='evenodd' d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z' clip-rule='evenodd'></path>
@@ -240,7 +249,9 @@
               <!-- Variable bindings for this tree-->
   
     
-  
+      
+      
+    
 
 
 
@@ -253,20 +264,52 @@
   <div class='flex items-center my-2 space-x-2 justify-left'>
     
     
-      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-500' viewBox='0 0 20 20' fill='currentColor'>
-        <path d='M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z'></path>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-700' viewBox='0 0 20 20' fill='currentColor'>
+        <path fill-rule='evenodd' d='M2 6a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1H8a3 3 0 00-3 3v1.5a1.5 1.5 0 01-3 0V6z' clip-rule='evenodd'></path>
+        <path d='M6 12a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 01-2 2H2h2a2 2 0 002-2v-2z'></path>
       </svg>
-    
+      
   
-    <a class='hover:underline truncate' title='Demo' href='demo'>
+    <a class='font-bold hover:underline truncate' title='Demo' href='demo'>
       Demo
     </a>
     
       
-        <span class='text-gray-300' title='7 children inside'>
-          7
-        </span>
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Custom CSS styling' href='demo/custom-style'>
+      Custom CSS styling
+    </a>
+    
       
+        
     
   </div>
 
@@ -275,8 +318,156 @@
   -->
   
 </div>
-            
-              <!-- Variable bindings for this tree-->
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Embedding' href='demo/embed'>
+      Embedding
+    </a>
+    
+      
+        
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Extended Markdown ✍️' href='demo/markdown'>
+      <em>Extended</em> Markdown <span class='emoji' data-emoji='writing_hand' style='font-family: emoji'>✍️</span>
+    </a>
+    
+      
+        
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='File WikiLinks' href='demo/file-links'>
+      File WikiLinks
+    </a>
+    
+      
+        
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Neuron-like layout' href='demo/neuron-layout'>
+      Neuron-like layout
+    </a>
+    
+      
+        
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
   
   
 
@@ -296,8 +487,8 @@
       </svg>
       
   
-    <a class='font-bold text-blue-600 hover:underline truncate' title='Examples' href='examples'>
-      Examples
+    <a class='font-bold text-blue-600 hover:underline truncate' title='Pandoc Lua Filters' href='demo/lua-filters'>
+      Pandoc Lua Filters
     </a>
     
       
@@ -308,6 +499,83 @@
   -->
   
     
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='YAML configuration' href='demo/yaml-config'>
+      YAML configuration
+    </a>
+    
+      
+        
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+    
+  
+</div>
+            
+              <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Examples' href='examples'>
+      Examples
+    </a>
+    
+      
+        
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
   
 </div>
             
@@ -435,7 +703,7 @@
           <main class='px-4 py-4'>
             <h1 class='flex items-end justify-center mb-4 p-3 bg-blue-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Examples
+    Pandoc Lua Filters
   </a>
 </h1>
             <article class='overflow-auto'>
@@ -447,67 +715,29 @@
 </div>
   
     <p class='mb-3'>
-      Here is an assorted collection of websites generated by Emanote, sorted alphabetically:
+      <strong>WARNING</strong>: This is an <span class='bg-yellow-200 px-2 py-0.5 rounded-xl'>🧪 experimental 🧪</span> feature and may change in future. It is being made available so users can try it out and give feedback to the author.
     </p>
-  
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <a href='https://chenghaomou.github.io/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>https://chenghaomou.github.io/</a> (view <a href='https://github.com/ChenghaoMou/chenghaomou.github.io' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>source</a>)
-        </li>
-      
-        <li>
-          <a href='https://coda-coda.github.io/zettels/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>https://coda-coda.github.io/zettels/</a> (view <a href='https://github.com/coda-coda/zettels' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>source</a>)
-        </li>
-      
-        <li>
-          <a href='https://ema.srid.ca' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>https://ema.srid.ca</a> (view <a href='https://github.com/srid/emanote/tree/master/docs' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>source</a>).
-        </li>
-      
-        <li>
-          <a href='https://input-output-hk.github.io/adrestia/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>https://input-output-hk.github.io/adrestia/</a> (view <a href='https://github.com/input-output-hk/adrestia/tree/master/docs' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>source</a>)
-        </li>
-      
-        <li>
-          <a href='https://input-output-hk.github.io/cardano-wallet/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>https://input-output-hk.github.io/cardano-wallet/</a> (view <a href='https://github.com/input-output-hk/cardano-wallet/tree/master/docs' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>source</a>)
-        </li>
-      
-        <li>
-          <a href='https://inspirativity.zettel.page/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>https://inspirativity.zettel.page/</a> (view <a href='https://github.com/srid/inspirativity.zettel.page' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>source</a>)
-        </li>
-      
-        <li>
-          <a href='https://n.xygn.us/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>https://n.xygn.us/</a>
-        </li>
-      
-        <li>
-          <a href='https://themotte.zettel.page/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>https://themotte.zettel.page/</a> (view <a href='https://github.com/Kuratoro/TheMotte.zettel.page' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>source</a>)
-        </li>
-      
-        <li>
-          <a href='https://vanceism7.ml' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>https://vanceism7.ml</a> (view <a href='https://gitlab.com/vanceism7/site' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>source</a>)
-        </li>
-      
-        <li>
-          <a href='https://www.srid.ca/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>https://www.srid.ca/</a> (view <a href='https://github.com/srid/www.srid.ca' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>source</a>)
-        </li>
-      
-        <li>
-          <a href='https://plutonomicon.github.io/plutonomicon/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>https://plutonomicon.github.io/plutonomicon/</a> (view <a href='https://github.com/Plutonomicon/plutonomicon' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>source</a>)
-        </li>
-      
-        <li>
-          <a href='https://haskell-game.dev/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>https://haskell-game.dev/</a> (view <a href='https://gitlab.com/dpwiz/haskell-game.dev' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>source</a>)
-        </li>
-      
-    </ul>
   
     <p class='mb-3'>
-      Wish to add your Emanote website to the above list? <a href='https://github.com/srid/emanote/discussions/new?category=show-and-tell' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Tell us here</a>.
+      See <a href='https://github.com/srid/emanote/issues/263' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>https://github.com/srid/emanote/issues/263</a>
     </p>
   
+    <p class='mb-3'>
+      To enable a <a href='https://pandoc.org/lua-filters.html' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Pandoc Lua filter</a> for a particular Markdown file, put that filter in your notebook and add the following to the Markdown file’s YAML frontmatter:
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='yaml language-yaml'>pandoc:
+  filters:
+    - path/to/your.lua</code></pre></div>
+    <p class='mb-3'>
+      See <a href='https://github.com/srid/emanote/pull/278#issue-1207537343' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>here</a> for known limitations.
+    </p>
+  <h2 id='demo' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Demo</h2>
+    <p class='mb-3'>
+      This uses the <a href='https://github.com/pandoc/lua-filters/tree/master/list-table' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>list table</a> filter (copied as <a href='filters/list-table.lua' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>File:list-table.lua</a>):
+    </p>
+  <h3 id='list-tablelua' class='mt-6 mb-2 text-3xl font-bold text-gray-700'><code class='py-0.5 px-0.5 bg-gray-100'>list-table.lua</code></h3><table class='mb-3'><thead><tr class='border-b-2 border-t-2 border-gray-300'><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>row 1, column 1</th><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>row 1, column 2</th><th class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>row 1, column 3</th></tr></thead><tbody><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>row 2, column 1</td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'></td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>row 2, column 3</td></tr><tr class='border-b-2 border-t-2 border-gray-300'><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>row 3, column 1</td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>row 3, column 2</td><td class='py-2 px-2 align-top border-r-2 border-l-2 border-gray-300'>Well!</td></tr></tbody></table>
   <div class='flex items-center justify-center mt-2'>
-  <a class='text-gray-300 hover:text-blue-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/emanote/edit/master/docs/examples.md'>
+  <a class='text-gray-300 hover:text-blue-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/emanote/edit/master/docs/demo/lua-filters.md'>
     <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
       <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
     </svg>
@@ -517,55 +747,9 @@
             <div class='flex flex-col lg:flex-row lg:space-x-2'>
               
               
-  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
-    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
-    <ul class='space-y-1'>
-      
-        <li>
-          <a class='text-blue-600 mavenLinkBold hover:bg-blue-50' href=''>
-            Emanote
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
-      <div><p><a href='https://github.com/srid/emanote' class='text-gray-600 hover:underline' target='_blank' rel='noopener'>Emanote</a> is currently in <strong>beta</strong> phase. Feel free to try it out and give feedback, to ensure that the upcoming 1.0 release is solid. See <a href='examples' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>websites using Emanote</a>.</p></div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-        <li>
-          <a class='text-blue-600 mavenLinkBold hover:bg-blue-50' href='demo/custom-style'>
-            Custom CSS styling
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
-      <div><p><a href='examples' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkEmbed'>Examples</a></p></div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-    </ul>
-  </div>
-
             </div>
             
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
-    
-      <!-- FIXME: The use of -/tags is wrong, because we should use routeUrl using Ema's encoder 
-        Perhaps Emanote should inject tagMetas with urls.
-      -->
-      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-blue-500' href='-/tags/external'>
-        <!-- DoNotFormat -->
-        #external
-        <!-- DoNotFormat -->
-      </a>
     
   </section>
 
