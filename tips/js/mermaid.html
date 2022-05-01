@@ -17,14 +17,18 @@
       <base href='/' />
       <link href='favicon.svg' rel='icon' />
     
-    <!-- mermaid.js --><script src='https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js'></script>
+    <!-- highlight.js --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/hybrid.min.css' />
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js'></script>
+<script>hljs.highlightAll();</script>
+
+<!-- mermaid.js --><script src='https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js'></script>
 <script>
   mermaid.initialize({startOnLoad:false});
   mermaid.init(undefined,document.querySelectorAll(".mermaid"));
 </script>
 
   
-  <link href='tailwind.css?instanceId=199ee1a7-a7b6-4e10-8abf-9aa5d7403ca6' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=a0ee12db-6fd8-4e3e-9475-d745c9155868' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style type='text/css'>
@@ -770,24 +774,24 @@
     <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
       
         <li>
-          Add the following to your <code class='py-0.5 px-0.5 bg-gray-100'>page.headHtml</code>, either in frontmatter or <code class='py-0.5 px-0.5 bg-gray-100'>index.yaml</code> (see <a href='demo/yaml-config' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>YAML configuration</a>)<div class='border-2 p-1 overflow-auto my-1 bg-gray-50'><div class='py-0.5 mb-3 text-sm'><pre><code class='yaml language-yaml'>page:
+          Add the following to your <code class='py-0.5 px-0.5 bg-gray-100'>page.headHtml</code>, either in frontmatter or <code class='py-0.5 px-0.5 bg-gray-100'>index.yaml</code> (see <a href='demo/yaml-config' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>YAML configuration</a>)<div class='py-0.5 mb-3 text-sm'><pre><code class='yaml language-yaml'>page:
   headHtml: |
     &lt;script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"&gt;&lt;/script&gt;
     &lt;script&gt;
       mermaid.initialize({startOnLoad:false});
       mermaid.init(undefined,document.querySelectorAll(".mermaid"));
-    &lt;/script&gt;</code></pre></div></div>
+    &lt;/script&gt;</code></pre></div>
         </li>
       
         <li>
-          Add a code block with <code class='py-0.5 px-0.5 bg-gray-100'>mermaid</code> language<div class='border-2 p-1 overflow-auto my-1 bg-gray-50'><div class='py-0.5 mb-3 text-sm'><pre><code class='markdown language-markdown'>```mermaid
+          Add a code block with <code class='py-0.5 px-0.5 bg-gray-100'>mermaid</code> language<div class='py-0.5 mb-3 text-sm'><pre><code class='markdown language-markdown'>```mermaid
 %%{init: {'theme': 'forest', "flowchart" : { "curve" : "basis" } } }%%
 graph TD;
     A--&gt;B;
     A--&gt;C;
     B--&gt;D;
     C--&gt;D;
-```</code></pre></div></div>
+```</code></pre></div>
         </li>
       
     </ul>
@@ -795,16 +799,16 @@ graph TD;
     <p class='mb-3'>
       The result will be:
     </p>
-  <div class='py-0.5 mb-3 text-sm'><pre><code class='mermaid language-mermaid'>%%{init: {'theme': 'forest', "flowchart" : { "curve" : "basis" } } }%%
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='nohighlight language-nohighlight mermaid'>%%{init: {'theme': 'forest', "flowchart" : { "curve" : "basis" } } }%%
 graph TD;
     A--&gt;B;
     A--&gt;C;
     B--&gt;D;
     C--&gt;D;</code></pre></div>
     <p class='mb-3'>
-      Note that mermaid.js will have trouble operating with PrismJS <a href='tips/js/syntax-highlighting' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Syntax Highlighting</a>.
+      Note that mermaid.js will have trouble operating with PrismJS <a href='tips/js/syntax-highlighting' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Syntax Highlighting</a>, but it works well with highlight.js (which this note uses).
     </p>
-  <h2 id='more-examples' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>More examples</h2><div class='py-0.5 mb-3 text-sm'><pre><code class='mermaid language-mermaid'>stateDiagram
+  <h2 id='more-examples' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>More examples</h2><div class='py-0.5 mb-3 text-sm'><pre><code class='nohighlight language-nohighlight mermaid'>stateDiagram
     direction LR
     [*] --&gt; A
     A --&gt; B
@@ -813,7 +817,7 @@ graph TD;
       direction LR
       a --&gt; b
     }
-    B --&gt; D</code></pre></div><div class='py-0.5 mb-3 text-sm'><pre><code class='mermaid language-mermaid'>gantt
+    B --&gt; D</code></pre></div><div class='py-0.5 mb-3 text-sm'><pre><code class='nohighlight language-nohighlight mermaid'>gantt
     dateFormat  YYYY-MM-DD
     title       Adding GANTT diagram functionality to mermaid
     excludes    weekends
@@ -862,6 +866,21 @@ graph TD;
     <ul class='space-y-1'>
       
         <li>
+          <a class='text-blue-600 mavenLinkBold hover:bg-blue-50' href='tips/js/syntax-highlighting'>
+            Syntax Highlighting
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
+      <div><p>An alias for highlight.js also exists, especially as highlight.js works better with <a href='tips/js/mermaid' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Mermaid Diagrams</a> than PrismJS:</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
           <a class='text-blue-600 mavenLinkBold hover:bg-blue-50' href='demo/markdown'>
             <em>Extended</em> Markdown <span class='emoji' data-emoji='writing_hand' style='font-family: emoji'>✍️</span>
           </a>
@@ -907,7 +926,7 @@ graph TD;
     </a>
   </div>
   <div>
-    <a href='https://emanote.srid.ca' target='_blank' title='Generated by Emanote 0.6.4.0'>
+    <a href='https://emanote.srid.ca' target='_blank' title='Generated by Emanote 0.6.5.0'>
       <img class='w-6 h-6 hover:text-blue-700' src='_emanote-static/emanote-logo.svg' />
     </a>
   </div>
