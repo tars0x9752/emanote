@@ -25,7 +25,7 @@
 
 
   
-  <link href='tailwind.css?instanceId=d270cfd0-90b8-40cc-a72f-f23580a7c63c' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=b70f2c6a-8ff5-4f65-a816-4df6e8ed321f' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style type='text/css'>
@@ -542,14 +542,7 @@
         </li>
       
         <li>
-          Optional: Use build cache
-    <!-- DoNotFormat -->
-    <!-- We use JavaScript because anchor links won't work if there is a <base> tag;
-         see https://stackoverflow.com/a/34765348 
-    -->
-    <sup class='px-0.5'><a class='text-blue-600 hover:underline' href='javascript:;' onclick="document.location.hash='#fn1';">1</a></sup>
-    <!-- DoNotFormat -->
-  : <code class='py-0.5 px-0.5 bg-gray-100'>nix profile install nixpkgs#cachix && cachix use srid</code>
+          Optional: Use Nix cache provided <a href='https://garnix.io/docs/caching' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>by garnix</a>
         </li>
       
         <li>
@@ -575,20 +568,6 @@ emanote -L /path/to/notebook gen /tmp/output</code></pre></div><h2 id='non-nix-m
     <p class='mb-3'>
       Emanote is not on <a href='https://hackage.haskell.org/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Hackage</a> yet, as 1.0 is yet to be released. Once on Hackage, Emanote can be packaged up in various ways like <a href='https://pandoc.org/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Pandoc</a> (another Haskell software on Hackage) is. It will become the distributor’s responsibility to create and maintain this long-term. Nix and <a href='start/install/docker' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Docker image</a> are the only mechanisms the author intends to support in the long-term.
     </p>
-  
-    <div title='Footnotes' class='pt-2 mt-8 space-y-1 text-gray-500 transform scale-x-90 border-t-2'>
-      <header class='font-semibold'>Footnotes</header>
-      
-        <div id='fn1'>
-          <header class='italic'>
-            1.
-          </header>
-          <div class='inline-block mb-2 ml-4'>
-            This cache works only on Linux. If you are on macOS, use the <a href='https://garnix.io/docs/caching' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>garnix cache</a>.
-          </div>
-        </div>
-      
-    </div>
   
   <div class='flex items-center justify-center mt-2'>
   <a class='text-gray-300 hover:text-blue-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/emanote/edit/master/docs/start/install.md'>
