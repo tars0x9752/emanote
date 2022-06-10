@@ -25,7 +25,7 @@
 
 
   
-  <link href='tailwind.css?instanceId=f86808c7-0c5e-4135-89b8-fc84dd3de676' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=b4c109b3-7f4d-4145-9902-91c0a2880511' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style type='text/css'>
@@ -538,15 +538,30 @@
     <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
       
         <li>
-          Install <a href='https://nixos.org/download.html' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Nix</a> (for Windows, see <a href='tips/wsl' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Using on Windows</a> or <a href='https://github.com/srid/emanote/issues/230' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>the Docker approach</a>)
+          <a href='https://nixos.org/download.html' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Install Nix</a> & <a href='https://nixos.wiki/wiki/Flakes#Installing_flakes' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>enable Flakes</a>
+    <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
+      
+        <li>
+          For Windows, see <a href='tips/wsl' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Using on Windows</a> or <a href='https://github.com/srid/emanote/issues/230' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>the Docker approach</a>
+        </li>
+      
+    </ul>
+  
         </li>
       
         <li>
-          Optional: Use Nix cache provided <a href='https://garnix.io/docs/caching' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>by garnix</a>
+          Optional: Use Nix binary cache provided <a href='https://garnix.io/docs/caching' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>by garnix</a>
         </li>
       
         <li>
           Run <code class='py-0.5 px-0.5 bg-gray-100'>nix profile install github:srid/emanote</code> to install Emanote
+    <!-- DoNotFormat -->
+    <!-- We use JavaScript because anchor links won't work if there is a <base> tag;
+         see https://stackoverflow.com/a/34765348 
+    -->
+    <sup class='px-0.5'><a class='text-blue-600 hover:underline' href='javascript:;' onclick="document.location.hash='#fn1';">1</a></sup>
+    <!-- DoNotFormat -->
+  
         </li>
       
     </ul>
@@ -568,6 +583,20 @@ emanote -L /path/to/notebook gen /tmp/output</code></pre></div><h2 id='non-nix-m
     <p class='mb-3'>
       Emanote is not on <a href='https://hackage.haskell.org/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Hackage</a> yet, as 1.0 is yet to be released. Once on Hackage, Emanote can be packaged up in various ways like <a href='https://pandoc.org/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Pandoc</a> (another Haskell software on Hackage) is. It will become the distributor’s responsibility to create and maintain this long-term. Nix and <a href='start/install/docker' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Docker image</a> are the only mechanisms the author intends to support in the long-term.
     </p>
+  
+    <div title='Footnotes' class='pt-2 mt-8 space-y-1 text-gray-500 transform scale-x-90 border-t-2'>
+      <header class='font-semibold'>Footnotes</header>
+      
+        <div id='fn1'>
+          <header class='italic'>
+            1.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            You may also “try before installing” by running <code class='py-0.5 px-0.5 bg-gray-100'>nix run github:srid/emanote</code>. This still downloads emanote to your nix store, <code class='py-0.5 px-0.5 bg-gray-100'>/nix</code>, but will not install it to the user profile like <code class='py-0.5 px-0.5 bg-gray-100'>nix profile install</code> does.
+          </div>
+        </div>
+      
+    </div>
   
   <div class='flex items-center justify-center mt-2'>
   <a class='text-gray-300 hover:text-blue-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/emanote/edit/master/docs/start/install.md'>
