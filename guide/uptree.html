@@ -5,15 +5,15 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Tips – Emanote
+    Uplink tree – Emanote
   </title>
   
     
-      <meta property='og:description' content='See also ([[demo]],[]).' />
+      <meta property='og:description' content='The uplink tree or uptreeThis feature was inspired by an equivalent feature from Neuron. is a feature available in ([[neuron-layout]],[Str "the",Space,Str "`note`",Space,Str "template"])the `note` template, which visualizes hierarchical relationships between notes as a graph at the top of the page.' />
       <meta property='og:site_name' content='Emanote' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Tips' />
+      <meta property='og:title' content='Uplink tree' />
     
     
       <base href='/' />
@@ -99,6 +99,15 @@
             <li class='inline-flex items-center'>
               <a class='px-1 font-bold' href=''>
                 Emanote
+              </a>
+              <svg fill='currentColor' viewBox='0 0 20 20' class='w-auto h-5 text-gray-400'>
+                <path fill-rule='evenodd' d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z' clip-rule='evenodd'></path>
+              </svg>
+            </li>
+          
+            <li class='inline-flex items-center'>
+              <a class='px-1 font-bold' href='guide'>
+                Guide
               </a>
               <svg fill='currentColor' viewBox='0 0 20 20' class='w-auto h-5 text-gray-400'>
                 <path fill-rule='evenodd' d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z' clip-rule='evenodd'></path>
@@ -203,7 +212,9 @@
               <!-- Variable bindings for this tree-->
   
     
-  
+      
+      
+    
 
 
 
@@ -216,26 +227,96 @@
   <div class='flex items-center my-2 space-x-2 justify-left'>
     
     
-      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-500' viewBox='0 0 20 20' fill='currentColor'>
-        <path d='M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z'></path>
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-700' viewBox='0 0 20 20' fill='currentColor'>
+        <path fill-rule='evenodd' d='M2 6a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1H8a3 3 0 00-3 3v1.5a1.5 1.5 0 01-3 0V6z' clip-rule='evenodd'></path>
+        <path d='M6 12a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 01-2 2H2h2a2 2 0 002-2v-2z'></path>
       </svg>
-    
+      
   
-    <a class='hover:underline truncate' title='Guide' href='guide'>
+    <a class='font-bold hover:underline truncate' title='Guide' href='guide'>
       Guide
     </a>
     
       
-        <span class='text-gray-300' title='2 children inside'>
-          2
-        </span>
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Migrating from neuron' href='guide/neuron'>
+      Migrating from neuron
+    </a>
+    
       
+        
     
   </div>
 
   <!-- Node's children forest, displayed only on active trees
     TODO: Use <details> to toggle visibility?
   -->
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+  
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'>
+        </path>
+      </svg>
+      
+  
+    <a class='font-bold text-blue-600 hover:underline truncate' title='Uplink tree' href='guide/uptree'>
+      Uplink tree
+    </a>
+    
+      
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+    
+  
+</div>
+    
   
 </div>
             
@@ -356,75 +437,6 @@
             
               <!-- Variable bindings for this tree-->
   
-  
-
-
-  
-  
-
-<!-- Rendering of this tree -->
-<div class='pl-2'>
-  <!-- Node's rootLabel-->
-  <div class='flex items-center my-2 space-x-2 justify-left'>
-    
-    
-      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-700' viewBox='0 0 20 20' fill='currentColor'>
-        <path fill-rule='evenodd' d='M2 6a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1H8a3 3 0 00-3 3v1.5a1.5 1.5 0 01-3 0V6z' clip-rule='evenodd'></path>
-        <path d='M6 12a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 01-2 2H2h2a2 2 0 002-2v-2z'></path>
-      </svg>
-      
-  
-    <a class='font-bold text-blue-600 hover:underline truncate' title='Tips' href='tips'>
-      Tips
-    </a>
-    
-      
-  </div>
-
-  <!-- Node's children forest, displayed only on active trees
-    TODO: Use <details> to toggle visibility?
-  -->
-  
-    
-      <!-- Variable bindings for this tree-->
-  
-    
-  
-
-
-
-  
-
-
-<!-- Rendering of this tree -->
-<div class='pl-2'>
-  <!-- Node's rootLabel-->
-  <div class='flex items-center my-2 space-x-2 justify-left'>
-    
-    
-      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
-        </path>
-      </svg>
-    
-  
-    <a class='hover:underline truncate' title='Adding Images' href='tips/adding-images'>
-      Adding Images
-    </a>
-    
-      
-        
-    
-  </div>
-
-  <!-- Node's children forest, displayed only on active trees
-    TODO: Use <details> to toggle visibility?
-  -->
-  
-</div>
-    
-      <!-- Variable bindings for this tree-->
-  
     
   
 
@@ -444,13 +456,13 @@
       </svg>
     
   
-    <a class='hover:underline truncate' title='JavaScript behaviours' href='tips/js'>
-      JavaScript behaviours
+    <a class='hover:underline truncate' title='Tips' href='tips'>
+      Tips
     </a>
     
       
-        <span class='text-gray-300' title='3 children inside'>
-          3
+        <span class='text-gray-300' title='5 children inside'>
+          5
         </span>
       
     
@@ -459,120 +471,6 @@
   <!-- Node's children forest, displayed only on active trees
     TODO: Use <details> to toggle visibility?
   -->
-  
-</div>
-    
-      <!-- Variable bindings for this tree-->
-  
-    
-  
-
-
-
-  
-
-
-<!-- Rendering of this tree -->
-<div class='pl-2'>
-  <!-- Node's rootLabel-->
-  <div class='flex items-center my-2 space-x-2 justify-left'>
-    
-    
-      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
-        </path>
-      </svg>
-    
-  
-    <a class='hover:underline truncate' title='Synchronizing notes using Syncthing' href='tips/sync'>
-      Synchronizing notes using Syncthing
-    </a>
-    
-      
-        
-    
-  </div>
-
-  <!-- Node's children forest, displayed only on active trees
-    TODO: Use <details> to toggle visibility?
-  -->
-  
-</div>
-    
-      <!-- Variable bindings for this tree-->
-  
-    
-  
-
-
-
-  
-
-
-<!-- Rendering of this tree -->
-<div class='pl-2'>
-  <!-- Node's rootLabel-->
-  <div class='flex items-center my-2 space-x-2 justify-left'>
-    
-    
-      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
-        </path>
-      </svg>
-    
-  
-    <a class='hover:underline truncate' title='Using on Nix/NixOS' href='tips/nix'>
-      Using on Nix/NixOS
-    </a>
-    
-      
-        
-    
-  </div>
-
-  <!-- Node's children forest, displayed only on active trees
-    TODO: Use <details> to toggle visibility?
-  -->
-  
-</div>
-    
-      <!-- Variable bindings for this tree-->
-  
-    
-  
-
-
-
-  
-
-
-<!-- Rendering of this tree -->
-<div class='pl-2'>
-  <!-- Node's rootLabel-->
-  <div class='flex items-center my-2 space-x-2 justify-left'>
-    
-    
-      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
-        </path>
-      </svg>
-    
-  
-    <a class='hover:underline truncate' title='Using on Windows' href='tips/wsl'>
-      Using on Windows
-    </a>
-    
-      
-        
-    
-  </div>
-
-  <!-- Node's children forest, displayed only on active trees
-    TODO: Use <details> to toggle visibility?
-  -->
-  
-</div>
-    
   
 </div>
             
@@ -622,7 +520,7 @@
           <main class='px-4 py-4'>
             <h1 class='flex items-end justify-center mb-4 p-3 bg-blue-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Tips
+    Uplink tree
   </a>
 </h1>
             <article class='overflow-auto'>
@@ -634,72 +532,56 @@
 </div>
   
     <p class='mb-3'>
-      See also <a href='demo' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Demo</a>.
-    </p>
-  <nav>
-  <div class='mb-8'>
-    <header class='pb-2 mb-2 font-semibold text-gray-600'>
-      Pages matching path './*'
-    </header>
-    
-      <div class='flex flex-wrap my-2'>
-        
-          <span class='mr-2 text-right text-gray-600'>
-          </span>
-        
-        <a class='flex-1 text-blue-600 mavenLinkBold border-l-2 pl-2 hover:underline' href='tips/adding-images'>
-          Adding Images
-        </a>
-      </div>
-    
-      <div class='flex flex-wrap my-2'>
-        
-          <span class='mr-2 text-right text-gray-600'>
-          </span>
-        
-        <a class='flex-1 text-blue-600 mavenLinkBold border-l-2 pl-2 hover:underline' href='tips/js'>
-          JavaScript behaviours
-        </a>
-      </div>
-    
-      <div class='flex flex-wrap my-2'>
-        
-          <span class='mr-2 text-right text-gray-600'>
-          </span>
-        
-        <a class='flex-1 text-blue-600 mavenLinkBold border-l-2 pl-2 hover:underline' href='tips/sync'>
-          Synchronizing notes using Syncthing
-        </a>
-      </div>
-    
-      <div class='flex flex-wrap my-2'>
-        
-          <span class='mr-2 text-right text-gray-600'>
-          </span>
-        
-        <a class='flex-1 text-blue-600 mavenLinkBold border-l-2 pl-2 hover:underline' href='tips/nix'>
-          Using on Nix/NixOS
-        </a>
-      </div>
-    
-      <div class='flex flex-wrap my-2'>
-        
-          <span class='mr-2 text-right text-gray-600'>
-          </span>
-        
-        <a class='flex-1 text-blue-600 mavenLinkBold border-l-2 pl-2 hover:underline' href='tips/wsl'>
-          Using on Windows
-        </a>
-      </div>
-    
-  </div>
-</nav>
-    <p class='mb-3'>
-      
+      The <em>uplink tree</em> or “uptree”
+    <!-- DoNotFormat -->
+    <!-- We use JavaScript because anchor links won't work if there is a <base> tag;
+         see https://stackoverflow.com/a/34765348 
+    -->
+    <sup class='px-0.5'><a class='text-blue-600 hover:underline' href='javascript:;' onclick="document.location.hash='#fn1';">1</a></sup>
+    <!-- DoNotFormat -->
+   is a feature available in <a href='demo/neuron-layout' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkTag'>the `note` template</a>, which visualizes hierarchical relationships between notes as a graph at the top of the page.
     </p>
   
+    <p class='mb-3'>
+      These relationships are called by <em>folgezettel links</em> and created with a special variation of emanote link syntax.
+    </p>
+  
+    <p class='mb-3'>
+      Conceptually, a <a href='https://neuron.zettel.page/folgezettel-heterarchy' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>folgezettel</a> link can be thought of as an arrow from a parent note to a descendent note.
+    </p>
+  <h2 id='syntax' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Syntax</h2><div class='py-0.5 mb-3 text-sm'><pre><code class='markdown language-markdown'>## A folgezettel link from another page to this one:
+
+Here is the #[[source-note]]
+
+## A folgezettel link from this page to another one:
+
+Here is the [[target-note]]#</code></pre></div><h2 id='folder-nodes' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Folder nodes</h2>
+    <p class='mb-3'>
+      By default, Emanote also includes any directories in your note’s path as vertices in the uptree graph.
+    </p>
+  
+    <p class='mb-3'>
+      This behavior can be configured. To turn off the implicit folder nodes, set to <code class='py-0.5 px-0.5 bg-gray-100'>false</code> the corresponding flag in <a href='demo/yaml-config' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>your configuration</a> as shown here:
+    </p>
+  <div class='py-0.5 mb-3 text-sm'><pre><code class='yaml language-yaml'>emanote:
+  # Whether to automatically treat folder notes as a folgezettel parent of its contents
+  folder-folgezettel: false</code></pre></div>
+    <div title='Footnotes' class='pt-2 mt-8 space-y-1 text-gray-500 transform scale-x-90 border-t-2'>
+      <header class='font-semibold'>Footnotes</header>
+      
+        <div id='fn1'>
+          <header class='italic'>
+            1.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            This feature was inspired by an equivalent feature <a href='https://neuron.zettel.page/uplink-tree' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>from Neuron</a>.
+          </div>
+        </div>
+      
+    </div>
+  
   <div class='flex items-center justify-center mt-2'>
-  <a class='text-gray-300 hover:text-blue-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/emanote/edit/master/docs/tips.md'>
+  <a class='text-gray-300 hover:text-blue-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/emanote/edit/master/docs/guide/uptree.md'>
     <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
       <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
     </svg>
@@ -709,6 +591,28 @@
             <div class='flex flex-col lg:flex-row lg:space-x-2'>
               
               
+  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
+    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
+    <ul class='space-y-1'>
+      
+        <li>
+          <a class='text-blue-600 mavenLinkBold hover:bg-blue-50' href='demo/neuron-layout'>
+            Neuron-like layout
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
+      <div><p>The “note” layout includes the <a href='guide/uptree' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Uplink tree</a> of Neuron based on folgezettel links as well as directory layout. Note that all top-level notes are automatically made a folgezettel branch of the root note (index), such that the “home” link appears on top in the uplink tree of all notes. As a demo, the page you are viewing is rendered using the “note” layout (whilst leaving the rest of the site to use the default “book” layout.)</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+    </ul>
+  </div>
+
             </div>
             
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
