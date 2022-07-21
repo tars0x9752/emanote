@@ -25,7 +25,7 @@
 
 
   
-  <link href='tailwind.css?instanceId=c34792af-b479-494b-b7fd-b22dacb0321d' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=f5d1a105-63e2-4266-a605-c4c7b1f66cd7' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style>
@@ -656,7 +656,14 @@
     </p>
   <h2 id='mobile-editing' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Mobile editing</h2>
     <p class='mb-3'>
-      On Android you can use the <a href='https://play.google.com/store/apps/details?id=md.obsidian&hl=en&gl=US' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Obsidian</a> app to edit your notes synced by Syncthing. <span class='bg-yellow-200 px-2 py-0.5 rounded-xl'>Changes made on desktop and mobile propagate both ways automatically.</span>
+      On Android
+    <!-- DoNotFormat -->
+    <!-- We use JavaScript because anchor links won't work if there is a <base> tag;
+         see https://stackoverflow.com/a/34765348 
+    -->
+    <sup class='px-0.5'><a class='text-blue-600 hover:underline' href='javascript:;' onclick="document.location.hash='#fn2';">2</a></sup>
+    <!-- DoNotFormat -->
+   you can use the <a href='https://play.google.com/store/apps/details?id=md.obsidian&hl=en&gl=US' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Obsidian</a> app to edit your notes synced by Syncthing. <span class='bg-yellow-200 px-2 py-0.5 rounded-xl'>Changes made on desktop and mobile propagate both ways automatically.</span>
     </p>
   <h2 id='dealing-with-data-loss' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Dealing with data loss</h2>
     <p class='mb-3'>
@@ -676,6 +683,15 @@
           </header>
           <div class='inline-block mb-2 ml-4'>
             “superior” … because when using Dropbox, Android phones (unlike desktop computers) cannot have automatic full-sync of files on disk.
+          </div>
+        </div>
+      
+        <div id='fn2'>
+          <header class='italic'>
+            2.
+          </header>
+          <div class='inline-block mb-2 ml-4'>
+            Obsidian can also synchronize notes between iOS and macOS <a href='https://help.obsidian.md/Getting+started/Sync+your+notes+across+devices' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>via iCloud</a>.
           </div>
         </div>
       
