@@ -30,7 +30,7 @@
 
 
   
-  <link href='tailwind.css?instanceId=d7e83ca5-8ad9-4f1e-94a8-26c6e2f92466' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=64fbe6dc-5f86-473d-a761-673fb816e23a' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style>
@@ -1115,7 +1115,9 @@
   <div class='py-0.5 mb-3 text-sm'><pre><code class='yaml language-yaml'>page:
   headHtml: |
     &lt;snippet var="js.highlightjs" /&gt;
-    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/${value:highlightjs-ver}/languages/haskell.min.js"&gt;&lt;/script&gt;</code></pre></div>
+    &lt;with var="js"&gt;
+    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/${value:highlightjs-ver}/languages/haskell.min.js"&gt;&lt;/script&gt;
+    &lt;/with&gt;</code></pre></div>
     <p class='mb-3'>
       (The <code class='py-0.5 px-0.5 bg-gray-100'>highlightjs-ver</code> variable also comes from the default <code class='py-0.5 px-0.5 bg-gray-100'>index.yaml</code>)
     </p>
