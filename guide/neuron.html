@@ -30,7 +30,7 @@
 
 
   
-  <link href='tailwind.css?instanceId=fd2b0b25-c9fa-46ab-9ac8-10e3e32ff277' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=f1a8f918-6453-42b5-b5f6-428b13aebdb1' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style>
@@ -892,7 +892,7 @@
         </li>
       
         <li>
-          In all notes, replace neuron’s <code class='py-0.5 px-0.5 bg-gray-100'>z:zettels</code>-style <a href='https://neuron.zettel.page/tag-queries' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>tag queries</a> with Obsidian-style queries. See <a href='demo' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>see demo</a>.
+          In all notes, replace neuron’s <code class='py-0.5 px-0.5 bg-gray-100'>z:zettels</code>-style <a href='https://neuron.zettel.page/tag-queries' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>tag queries</a> with <a href='guide/query' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Obsidian-style queries</a>.
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
@@ -908,43 +908,71 @@
         </li>
       
     </ul>
-  
-    <p class='mb-3'>
-      Capabilities Emanote provides, but neuron does not:
-    </p>
-  
+  <h2 id='capabilities-emanote-provides-but-neuron-does-not' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Capabilities Emanote provides, but neuron does not</h2>
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          Live server with hot reload
+          <a href='https://ema.srid.ca/topics/live-server' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Live server</a> (thanks to <a href='https://ema.srid.ca/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Ema</a>)
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          with <a href='https://ema.srid.ca/topics/hot-reload' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>hot reload</a>
         </li>
       
         <li>
-          Faster incremental build
+          and faster incremental build
+        </li>
+      
+    </ul>
+  
         </li>
       
         <li>
-          More lenient handling of malformed Markdown (eg: broken links)
-        </li>
+          Better linking
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
           Flexible WikiLinks (link to directories, or based on path, eg: <code class='py-0.5 px-0.5 bg-gray-100'>[[Foo/Bar]]</code>) including <a href='demo/file-links' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>File WikiLinks</a>.
         </li>
       
         <li>
-          Static files can be placed anywhere (not just in <code class='py-0.5 px-0.5 bg-gray-100'>./static</code> folder)
+          More lenient handling of malformed Markdown (eg: broken links)
         </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <a href='guide/query' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Obsidian-style queries</a>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          “Timeline backlinks” (Twitter-like registering of thoughts on any note)
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <a href='guide/search' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Full-text search</a>
+        </li>
+      
+        <li>
+          Better hierarchical directory tree integraion
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
           Full path based URLs (unless <code class='py-0.5 px-0.5 bg-gray-100'>slug</code> is set)
         </li>
       
         <li>
-          Hierarchical tag index at <code class='py-0.5 px-0.5 bg-gray-100'>/-/tags.html</code>.
+          Static files can be placed anywhere (not just in <code class='py-0.5 px-0.5 bg-gray-100'>./static</code> folder)
         </li>
       
-        <li>
-          Full theming (customize HTML fully)
+    </ul>
+  
         </li>
       
         <li>
@@ -952,14 +980,26 @@
         </li>
       
         <li>
-          Layers (merge Zettelkastens, or overlay them)
-        </li>
+          <a href='guide/layer' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Layer system</a> (merge Zettelkastens, or overlay them)
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          “Timeline backlinks” (Twitter-like registering of thoughts on any note)
+          Full theming (customize <a href='guide/html-template' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>HTML Templates</a> fully)
         </li>
       
     </ul>
+  
+        </li>
+      
+        <li>
+          Hierarchical tag index, and task index.
+        </li>
+      
+    </ul>
+  <h2 id='porting-existing-vim-plugins' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Porting existing Vim plugins</h2>
+    <p class='mb-3'>
+      See <a href='guide/export' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>JSON export</a>.
+    </p>
   
   <div class='flex items-center justify-center mt-2'>
   <a class='text-gray-300 hover:text-blue-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/emanote/edit/master/docs/guide/neuron.md'>
