@@ -5,15 +5,15 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Getting Started – Emanote
+    Sidebar – Emanote
   </title>
   
     
-      <meta property='og:description' content='From here, either visit [[guide]] or [[demo]].' />
+      <meta property='og:description' content='In the `book` templatethe `book` template, the sidebar is rendered on the left side. The sidebar tree is determined from the directory layout of the MarkdownMarkdown or OrgOrg files.in the sidebar.html file.' />
       <meta property='og:site_name' content='Emanote' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Getting Started' />
+      <meta property='og:title' content='Sidebar' />
     
     
       <base href='/' />
@@ -185,6 +185,15 @@
               </svg>
             </li>
           
+            <li class='inline-flex items-center'>
+              <a class='px-1 font-bold' href='guide'>
+                Guide
+              </a>
+              <svg fill='currentColor' viewBox='0 0 20 20' class='w-auto h-5 text-gray-400'>
+                <path fill-rule='evenodd' d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z' clip-rule='evenodd'></path>
+              </svg>
+            </li>
+          
         
       </ul>
     </div>
@@ -254,7 +263,50 @@
             
               <!-- Variable bindings for this tree-->
   
+    
   
+
+
+
+  
+  
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-500' viewBox='0 0 20 20' fill='currentColor'>
+        <path d='M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z'></path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Getting Started' href='start'>
+      Getting Started
+    </a>
+    
+      
+        <span class='text-gray-300' title='1 children inside'>
+          1
+        </span>
+      
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+            
+              <!-- Variable bindings for this tree-->
+  
+    
+      
+      
+    
+
 
 
   
@@ -272,8 +324,8 @@
       </svg>
       
   
-    <a class='font-bold text-blue-600 hover:underline truncate' title='Getting Started' href='start'>
-      Getting Started
+    <a class='font-bold hover:underline truncate' title='Guide' href='guide'>
+      Guide
     </a>
     
       
@@ -292,7 +344,7 @@
 
 
   
-  
+
 
 <!-- Rendering of this tree -->
 <div class='pl-2'>
@@ -300,20 +352,18 @@
   <div class='flex items-center my-2 space-x-2 justify-left'>
     
     
-      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-500' viewBox='0 0 20 20' fill='currentColor'>
-        <path d='M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z'></path>
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
       </svg>
     
   
-    <a class='hover:underline truncate' title='Installing' href='start/install'>
-      Installing
+    <a class='hover:underline truncate' title='JSON export' href='guide/export'>
+      JSON export
     </a>
     
       
-        <span class='text-gray-300' title='1 children inside'>
-          1
-        </span>
-      
+        
     
   </div>
 
@@ -323,10 +373,7 @@
   
 </div>
     
-  
-</div>
-            
-              <!-- Variable bindings for this tree-->
+      <!-- Variable bindings for this tree-->
   
     
   
@@ -334,7 +381,7 @@
 
 
   
-  
+
 
 <!-- Rendering of this tree -->
 <div class='pl-2'>
@@ -342,26 +389,247 @@
   <div class='flex items-center my-2 space-x-2 justify-left'>
     
     
-      <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 flex-shrink-0 inline text-gray-500' viewBox='0 0 20 20' fill='currentColor'>
-        <path d='M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z'></path>
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
       </svg>
     
   
-    <a class='hover:underline truncate' title='Guide' href='guide'>
-      Guide
+    <a class='hover:underline truncate' title='HTML Templates' href='guide/html-template'>
+      HTML Templates
     </a>
     
       
-        <span class='text-gray-300' title='8 children inside'>
-          8
-        </span>
-      
+        
     
   </div>
 
   <!-- Node's children forest, displayed only on active trees
     TODO: Use <details> to toggle visibility?
   -->
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Migrating from neuron' href='guide/neuron'>
+      Migrating from neuron
+    </a>
+    
+      
+        
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Obsidian-style queries' href='guide/query'>
+      Obsidian-style queries
+    </a>
+    
+      
+        
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Full-text search' href='guide/search'>
+      Full-text search
+    </a>
+    
+      
+        
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+  
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'>
+        </path>
+      </svg>
+      
+  
+    <a class='font-bold text-blue-600 hover:underline truncate' title='Sidebar' href='guide/sidebar'>
+      Sidebar
+    </a>
+    
+      
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+    
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Uplink tree' href='guide/uptree'>
+      Uplink tree
+    </a>
+    
+      
+        
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
+    <a class='hover:underline truncate' title='Known Issues' href='guide/known-issues'>
+      Known Issues
+    </a>
+    
+      
+        
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+    
   
 </div>
             
@@ -565,7 +833,7 @@
           <main class='px-4 py-4'>
             <h1 class='flex items-end justify-center mb-4 p-3 bg-blue-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Getting Started
+    Sidebar
   </a>
 </h1>
             <article class='overflow-auto'>
@@ -576,48 +844,36 @@
   </span>
 </div>
   
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          <a href='start/install' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Install Emanote</a>
-        </li>
-      
-        <li>
-          Use your existing notebook, or create one from <a href='resources/emanote-template' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>emanote-template</a>.
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          If using <a href='resources/emanote-template' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>emanote-template</a>, open the notebook in <a href='resources/vscode' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Visual Studio Code</a> and install the recommended extensions.
-        </li>
-      
-        <li>
-          <a href='resources/emanote-template' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>emanote-template</a> also includes the GitHub Pages workflow for static site deployment.
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-        <li>
-          Run <code class='py-0.5 px-0.5 bg-gray-100'>emanote run --port=8080</code> (or just <code class='py-0.5 px-0.5 bg-gray-100'>emanote</code>) in terminal after <code class='py-0.5 px-0.5 bg-gray-100'>cd</code>’ing to that notebook folder; this will launch the live server.
-    <ul class='my-3 ml-6 space-y-1 list-disc'>
-      
-        <li>
-          Or, if you only want to generate the HTML files (for deployment), run <code class='py-0.5 px-0.5 bg-gray-100'>mkdir /tmp/output; emanote gen /tmp/output</code>.
-        </li>
-      
-    </ul>
-  
-        </li>
-      
-    </ul>
-  
     <p class='mb-3'>
-      From here, either visit <a href='guide' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Guide</a> or <a href='demo' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Demo</a>.
+      In <a href='guide/html-template' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>the `book` template</a>, the sidebar is rendered on the left side. The sidebar tree is determined from the directory layout of the <a href='demo/markdown' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Markdown</a> or <a href='demo/orgmode' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Org</a> files.in the <code class='py-0.5 px-0.5 bg-gray-100'>sidebar.html</code> file.
     </p>
   
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Sidebar tree is collapsed by default. But this can be disabled by Setting <code class='py-0.5 px-0.5 bg-gray-100'>template.sidebar.collapsed</code> to <code class='py-0.5 px-0.5 bg-gray-100'>false</code> in <a href='demo/yaml-config' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>YAML configuration</a>
+        </li>
+      
+        <li>
+          The ordering of children in the tree is determined in the following order:
+    <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
+      
+        <li>
+          If <code class='py-0.5 px-0.5 bg-gray-100'>order</code> <a href='demo/yaml-config' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>frontmatter</a> metadata exists, use that as sort key.
+        </li>
+      
+        <li>
+          If the note has a H1 title, use that as well; otherwise, use the note filename.
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+    </ul>
+  
   <div class='flex items-center justify-center mt-2'>
-  <a class='text-gray-300 hover:text-blue-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/emanote/edit/master/docs/start.md'>
+  <a class='text-gray-300 hover:text-blue-600 text-sm' title='Edit this page on GitHub' href='https://github.com/srid/emanote/edit/master/docs/guide/sidebar.md'>
     <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
       <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
     </svg>
@@ -627,58 +883,6 @@
             <div class='flex flex-col lg:flex-row lg:space-x-2'>
               
               
-  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
-    <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
-    <ul class='space-y-1'>
-      
-        <li>
-          <a class='text-blue-600 mavenLinkBold hover:bg-blue-50' href='demo/embed'>
-            Embedding
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
-      <div><p><a href='start' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkEmbed'>Getting Started</a></p></div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-        <li>
-          <a class='text-blue-600 mavenLinkBold hover:bg-blue-50' href=''>
-            Emanote
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
-      <div><p>Begin from <a href='start' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Getting Started</a>, and then read through <a href='demo' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Demo</a>. Eventually, <a href='guide' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Guide</a> will contain full documentation.</p></div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-        <li>
-          <a class='text-blue-600 mavenLinkBold hover:bg-blue-50' href='demo/custom-style'>
-            Custom CSS styling
-          </a>
-          
-            <div class='mb-4 overflow-auto text-sm text-gray-500'>
-  
-    <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
-      <div><p><a href='start' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkEmbed'>Getting Started</a></p></div>
-    </div>
-  
-</div>
-          
-        </li>
-      
-    </ul>
-  </div>
-
             </div>
             
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
