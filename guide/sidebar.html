@@ -9,7 +9,7 @@
   </title>
   
     
-      <meta property='og:description' content='In the `book` templatethe `book` template, the sidebar is rendered on the left side. The sidebar tree is determined from the directory layout of the MarkdownMarkdown or OrgOrg files.in the sidebar.html file.' />
+      <meta property='og:description' content='In the `book` templatethe `book` template, the sidebar is rendered on the left side. The sidebar tree is determined from the directory layout of the MarkdownMarkdown or OrgOrg files.' />
       <meta property='og:site_name' content='Emanote' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
@@ -30,7 +30,7 @@
 
 
   
-  <link href='tailwind.css?instanceId=f1a8f918-6453-42b5-b5f6-428b13aebdb1' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=313eaa48-a865-4332-86c4-64d69710d776' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style>
@@ -882,13 +882,13 @@
 </div>
   
     <p class='mb-3'>
-      In <a href='guide/html-template' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>the `book` template</a>, the sidebar is rendered on the left side. The sidebar tree is determined from the directory layout of the <a href='demo/markdown' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Markdown</a> or <a href='demo/orgmode' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Org</a> files.in the <code class='py-0.5 px-0.5 bg-gray-100'>sidebar.html</code> file.
+      In <a href='guide/html-template' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>the `book` template</a>, the sidebar is rendered on the left side. The sidebar tree is determined from the directory layout of the <a href='demo/markdown' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Markdown</a> or <a href='demo/orgmode' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Org</a> files.
     </p>
   
     <ul class='my-3 ml-6 space-y-1 list-disc'>
       
         <li>
-          Sidebar tree is collapsed by default. But this can be disabled by Setting <code class='py-0.5 px-0.5 bg-gray-100'>template.sidebar.collapsed</code> to <code class='py-0.5 px-0.5 bg-gray-100'>false</code> in <a href='demo/yaml-config' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>YAML configuration</a>
+          The sidebar tree is collapsed by default. But this can be disabled by setting <code class='py-0.5 px-0.5 bg-gray-100'>template.sidebar.collapsed</code> to <code class='py-0.5 px-0.5 bg-gray-100'>false</code> in <a href='demo/yaml-config' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>YAML configuration</a>
         </li>
       
         <li>
@@ -896,11 +896,11 @@
     <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
       
         <li>
-          If <code class='py-0.5 px-0.5 bg-gray-100'>order</code> <a href='demo/yaml-config' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>frontmatter</a> metadata exists, use that as sort key.
+          If the <code class='py-0.5 px-0.5 bg-gray-100'>order</code> <a href='demo/yaml-config' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>frontmatter</a> metadata exists, use that as the primary sort key.
         </li>
       
         <li>
-          If the note has a H1 title, use that as well; otherwise, use the note filename.
+          If the note has a H1 title, use that as the secondary sort key; otherwise, use the note filename as the secondary sort key.
         </li>
       
     </ul>
